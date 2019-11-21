@@ -103,12 +103,16 @@ body {
     padding-bottom: 3em;
 }
 
+
+.hidden {
+  display: none;
+}
 .content-left {
     width: 25%;
 }
 
 .content-center {
-    position: relative;
+    position: relative; 
     text-align: justify;
     width: 50%;
 }
