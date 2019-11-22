@@ -9,8 +9,8 @@ for (var i = 0; i < btn_zuklappbar.length; i++) {
       this.classList.remove("pfeil-r");
       this.classList.add("pfeil-d");
     }
-
-    lern_inhalt = this.nextElementSibling;
+    console.log(this);
+    lern_inhalt = this.parentNode.nextElementSibling;
     if (lern_inhalt.classList.contains("hidden")) {
       lern_inhalt.classList.remove("hidden");
     } else {
