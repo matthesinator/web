@@ -103,11 +103,6 @@ body {
     padding-bottom: 3em;
 }
 
-
-.hidden {
-  display: none;
-}
-
 .content-left {
     width: 25%;
 }
@@ -116,6 +111,10 @@ body {
     position: relative; 
     text-align: justify;
     width: 50%;
+}
+
+.content-center p {
+  margin-top: 2px;
 }
 
 .content-right {
@@ -140,6 +139,27 @@ body {
 .footer div nav a {
     color: white;
     text-decoration: none;
+}
+
+.hidden {
+  /*visibility: hidden;  Im Unterschied zu display: none; bleibt hier der reserviert Platz bestehen. */
+  display: none;
+}
+
+.pfeil-d {
+  border:       solid #22376f;
+  border-width: 0 .2em .2em 0;
+  display:      inline-block;
+  padding:      .20em;
+  transform:rotate(45deg); 
+}
+
+.pfeil-r {
+  border:       solid #22376f;
+  border-width: 0 .2em .2em 0;
+  display:      inline-block;
+  padding:      .20em;
+  transform:rotate(-45deg);
 }
 
 #cookie {

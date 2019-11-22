@@ -1,9 +1,16 @@
-var btn_zuklappbar = document.getElementsByClassName("collapsible");
+var btn_zuklappbar = document.getElementsByClassName("pfeil-d");
 for (var i = 0; i < btn_zuklappbar.length; i++) {
   btn_zuklappbar[i].addEventListener("click", function () {
-    lern_inhalt = this.nextElementSibling;
     console.log(this);
-    console.log(lern_inhalt);
+    if(this.classList.contains("pfeil-d")){
+      this.classList.remove("pfeil-d");
+      this.classList.add("pfeil-r");
+    } else {
+      this.classList.remove("pfeil-r");
+      this.classList.add("pfeil-d");
+    }
+
+    lern_inhalt = this.nextElementSibling;
     if (lern_inhalt.classList.contains("hidden")) {
       lern_inhalt.classList.remove("hidden");
     } else {
