@@ -160,6 +160,7 @@ body {
   padding:      .20em;
   margin-right: 8px;
   transform:rotate(45deg); 
+  cursor: pointer;
 }
 
 .pfeil-r {
@@ -169,6 +170,11 @@ body {
   padding:      .20em;
   margin-right: 8px;
   transform:rotate(-45deg);
+  cursor: pointer;
+}
+
+.center-paragraph h4 {
+    cursor: pointer;
 }
 
 #cookie {
