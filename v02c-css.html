@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <title>Main Page</title>
+  <meta charset="UTF-8">
+  <link href="stylesheet.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="hsmalogo.png" />
+</head>
+
+<body>
+  <div class="page">
+    <div class="header">
+      <div>
+        <p>Gruppe A-5</p>
+        <img src="hsmalogo.png" class="logo">
+        <img src="hsmaschriftzug.png" alt="Hochschule Mannheim" class="schriftzug">
+      </div>
+    </div>
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="mainpage.html">Start</a></li>
+        <li><a href="andereseite.html">V01</a></li>
+        <li><a href="">V02a</a></li>
+        <li><a href="">V02b</a></li>
+        <li><a id="activetab" href="v02c-css.html">V02c</a></li>
+      </ul>
+    </nav>
+
+    <div class="content-container">
+      <div class="content-left">
+        <!--
+        <nav class="contentnav">
+					<ul>
+						<li><a href="#abs1">Abschnitt 1</a></li>
+						<li><a href="#abs2">Abschnitt 2</a></li>
+						<li><a href="#abs3">Abschnitt 3</a></li>
+						<li><a href="#abs4">Abschnitt 4</a></li>
+						<li><a href="#abs5">Abschnitt 5</a></li>
+						<li><a href="#abs6">Abschnitt 6</a></li>
+						<li><a href="#abs7">Abschnitt 7</a></li>
+						<li><a href="#abs8">Abschnitt 8</a></li>
+						<li><a href="#abs9">Abschnitt 9</a></li>
+					</ul>
+        </nav>
+        -->
+      </div>
+
+      <div class="content-center">
+        <h1>Die Sprache CSS3 im Detail</h1>
+        <hr>
+        <br>
+        <p class="beschreibung">
+          <img id="chapter-logo" src="css3-logo.png" alt="CSS3 Logo" width="15%" />
+          CSS3 wird benutzt um HTML-Dokumente zu stylen. Dieses Skript soll Ihnen die Grundlagen
+          der Benutzung von CSS3 beibringen. Die Abkürzung CSS steht für Cascading Style Sheets,
+          damit steckt der wichtigste Teil von CSS, die Kaskadierung schon im Namen.
+          <br>
+        </p>
+        <a id="skriptlink" href="CSS3 im Detail.pdf" target="_blank">→ CSS3 im Detail ←</a>
+        <p class="author">
+          Author: Matthes Würbs
+        </p>
+      </div>
+
+      <div class="content-right">
+
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <div>
+        <nav>
+          <a href="datenschutz.html">Datenschutzbestimmung</a>
+          <br>
+          <a href="impressium.html">Impressium</a>
+        </nav>
+      </div>
+    </div>
+
+    <div id="cookie">
+      <p id="cookietext">Auf unserer Seite benutzen wir Cookies. <a href="cookies.html">Mehr Info</a></p>
+
+      <div id="cookie-button" onclick='cookie()'>Mir doch egal</div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -12,7 +12,7 @@ body {
 
 .page {
     position: relative;
-    min-height: 98vh;
+    min-height: 100vh;
 }
 
 .header {
@@ -82,13 +82,14 @@ body {
 }
 
 .contentnav ul {
-    padding-right: 10%;
+    padding-right: 20%;
     list-style-type: none;
-    font-size: 1.5em;  
+    font-size: 2.5vh;  
 }
 
 .contentnav ul li a{
     text-decoration: none;
+    font-weight: bold;
     color: black;
 }
 
@@ -112,6 +113,48 @@ body {
 
 .content-left {
     width: 25%;
+}
+
+.content-center h1 {
+    text-align: center;
+}
+
+.content-center .beschreibung {
+    font-size: 1.2em;
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+    /*clearfix*/
+.content-center .beschreibung::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.content-center .beschreibung #chapter-logo {
+    float: left;
+    margin-right: 1%;
+}
+
+.content-center .author {
+    font-size: 0.8em;
+    text-align: right;
+}
+
+#skriptlink {
+    width: 100%;
+    text-decoration: none;
+    font-size: 2em;
+    text-align: center;
+
+    color: black;
+    background-color: white;
+    display: block;
+}
+
+#skriptlink:hover {
+    color: grey;
 }
 
 .content-center {
