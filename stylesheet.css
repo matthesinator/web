@@ -321,3 +321,13 @@ body {
   position: relative;
   left: 25%;
 }
+
+.uebung {
+  width: 50%;
+  position: relative;
+  left: 25%;
+  border: 2px solid blue;
+  padding: 2px;
+  min-height: 2.5em;
+  line-height: 1.5em;
+}
