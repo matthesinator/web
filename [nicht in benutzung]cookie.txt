@@ -1,0 +1,49 @@
+<div id="cookie">
+  <p id="cookietext">Auf unserer Seite benutzen wir Cookies. <a href="cookies.html">Mehr Info</a></p>
+
+  <div id="cookie-button" onclick='cookie()'>Mir doch egal</div>
+</div>
+
+#cookie {
+  position: fixed;
+  bottom: 0;
+
+  text-align: left;
+
+  background-color: #22376f;
+  color: white;
+
+  height: 5%;
+  width: 100%;
+}
+
+#cookie #cookietext {
+  position: relative;
+  left: 20%;
+}
+
+#cookie a {
+  color: darkgray;;
+}
+
+#cookie #cookie-button {
+  line-height: 200%;
+  vertical-align: middle;
+  text-align: center;
+  position: absolute;
+  top: 15%;
+  right: 20%;
+  height: 70%;
+  width: 10%;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+#cookie #cookie-button:hover {
+  background-color: #384b7d;
+  color: white;
+}
+
+
+
