@@ -76,16 +76,12 @@ body {
   width: 50%;
 }
 
-.content-center h1 {
+.content-center h1, h2, h3 {
   text-align: center;
 }
 
 .content-center p {
   margin-top: 2px;
-}
-
-.content-center h1 {
-  text-align: center;
 }
 
 .content-center .beschreibung {

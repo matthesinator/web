@@ -5,6 +5,7 @@
   <title>Main Page</title>
   <meta charset="UTF-8">
   <link href="stylesheet.css" rel="stylesheet" />
+  <link href="v02c-data/v02c-style.css" rel="stylesheet"/>
   <link rel="icon" type="image/png" href="hsmalogo.png" />
 </head>
 
@@ -20,11 +21,11 @@
 
     <nav>
 			<ul class="navigation">
-				<li><a id="activetab" href="mainpage.html">Start</a></li>
+				<li><a href="mainpage.html">Start</a></li>
 				<li><a href="andereseite.html">V01</a></li>
 				<li><a href="">V02a</a></li>
 				<li><a href="">V02b</a></li>
-        <li><a href="v02c-css.html">V02c</a></li>
+        <li><a id="activetab" href="v02c-css.html">V02c</a></li>
         <li><a href="">V03a</a></li>
         <li><a href="">V03b</a></li>
         <li><a href="">V03c</a></li>
@@ -55,16 +56,41 @@
         <hr>
         <br>
         <p class="beschreibung">
-          <img id="chapter-logo" src="css3-logo.png" alt="CSS3 Logo" width="15%" />
+          <img id="chapter-logo" src="v02c-data/css3-logo.png" alt="CSS3 Logo" width="15%" />
           CSS3 wird benutzt um HTML-Dokumente zu stylen. Dieses Skript soll Ihnen die Grundlagen
           der Benutzung von CSS3 beibringen. Die Abkürzung CSS steht für Cascading Style Sheets,
           damit steckt der wichtigste Teil von CSS, die Kaskadierung schon im Namen.
           <br>
         </p>
-        <a id="skriptlink" href="CSS3 im Detail.pdf" target="_blank">→ CSS3 im Detail ←</a>
+        <a id="skriptlink" href="v02c-data/CSS3 im Detail.pdf" target="_blank">→ CSS3 im Detail ←</a>
         <p class="author">
           Author: Matthes Würbs
         </p>
+        <br><br>
+        <div class="leseprobe">
+          <h2>Leseprobe</h2>
+          <div class="center-paragraph">
+            <h3>Aufbau von CSS-Dokumenten</h3>
+            <h4 id="abs1" class="hider"><i class="pfeil-d"></i>Das Grundgerüst</h4>
+            <p>
+                Ein CSS Stylesheet besteht im Grunde genommen aus drei wiederkehrenden Elementen: <strong>Selektoren</strong>, 
+                <strong>Eigenschaften</strong> und <strong>Werte</strong>. 
+                Der Selektor wählt aus, welches Element zu stylen ist, die Eigenschaft und der Wert, zusammen Deklaration genannt, legen 
+                fest, wie sich die entsprechende Eigenschaft äußert. Nach dem Selektor kommen, in geschweiften Klammern eingeschlossen die 
+                Regeln, jeweils durch Semikolons getrennt. Diese Kombination bezeichnet man als Regel, das Bild unter diesem Abschnitt 
+                zeigt eine solche. Von diesen Regeln gibt es mehrere in einem Stylesheet.
+                <figure id="abb2-1">
+                  <a href="https://www.w3schools.com/css/selector.gif"><img src="v02c-data/Abb2.1.gif" alt="Eine CSS Regel"/></a>
+                  <figcaption>Abb 2.1: Eine Simple CSS Regel
+
+                  </figcaption>
+                </figure>
+            </p>
+          </div>
+          <div class="center-paragraph">
+            <h4 id="abs1" class="hider"><i class="pfeil-d"></i>Abschnitt 1</h4>
+          </div>
+        </div>
       </div>
 
       <div class="content-right">
