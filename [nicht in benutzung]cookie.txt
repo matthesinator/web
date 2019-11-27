@@ -45,5 +45,10 @@
   color: white;
 }
 
+var cookie = document.getElementById("cookie-button");
+cookie.addEventListener("click", function() {
+  document.getElementById("cookie").classList.add("hidden");
+});
+
 
 

@@ -18,7 +18,6 @@ body {
 .navigation {
   list-style-type: none;
   background-color: #22376f;
-  
 }
 
 .navigation li {
@@ -60,10 +59,11 @@ body {
 }
 
 .center-paragraph {
-flex: 0 0 100%;
+  flex: 0 0 100%;
 }
+
 .center-paragraph h4 {
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .content-left {
@@ -81,7 +81,7 @@ margin-bottom: 10px;
 }
 
 .content-center p {
-margin-top: 2px;
+  margin-top: 2px;
 }
 
 .content-center h1 {
@@ -150,152 +150,165 @@ margin-top: 2px;
 
 .hidden {
 /*visibility: hidden;  Im Unterschied zu display: none; bleibt hier der reserviert Platz bestehen. */
-display: none;
+  display: none;
 }
 
 .pfeil-d {
-border:       solid #22376f;
-border-width: 0 .2em .2em 0;
-display:      inline-block;
-padding:      .20em;
-margin-right: 8px;
-transform:rotate(45deg); 
-cursor: pointer;
+  border:       solid #22376f;
+  border-width: 0 .2em .2em 0;
+  display:      inline-block;
+  padding:      .20em;
+  margin-right: 8px;
+  transform:rotate(45deg); 
+  cursor: pointer;
 }
 
 .pfeil-r {
-border:       solid #22376f;
-border-width: 0 .2em .2em 0;
-display:      inline-block;
-padding:      .20em;
-margin-right: 8px;
-transform:rotate(-45deg);
-cursor: pointer;
+  border:       solid #22376f;
+  border-width: 0 .2em .2em 0;
+  display:      inline-block;
+  padding:      .20em;
+  margin-right: 8px;
+  transform:rotate(-45deg);
+  cursor: pointer;
 }
 
 .center-paragraph h4 {
   cursor: pointer;
 }
+
 @media screen and (min-width: 1300px) {
   .contentnav ul {
     font-size: 2.5vh;  
-}
+  }
+
   .contentnav ul li a{
     font-weight: bold;
   }
 }
+
 @media screen and (min-width: 701px) {
-.contentnav {
-  width: 100%;
-  text-align: right;
-  position: sticky;
-  top: 1em;
-}
-
-.contentnav ul {
-    padding-right: 20%; 
-    list-style-type: none;
-}
-.contentnav ul li a{
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
-}
-
-.contentnav ul li a:hover{
-    color: grey;
-}
-
-.header {
-  background-color: #22376f;
-  padding: 2em;
-}
-
-.header div p {
-  color: white;
-  font-size: 2em;
-  position: absolute;
-  right: 2%;
-  top: 0.1em;
-}
-.header div .schriftzug {
-    position: absolute;
+  .contentnav {
+    width: 100%;
+    text-align: right;
+    position: sticky;
     top: 1em;
-    left: 8em;
-}
-.navigation li a {
-  height: 5ex;
-  line-height: 5ex;
-}
+  }
+
+  .contentnav ul {
+      padding-right: 20%; 
+      list-style-type: none;
+  }
+
+  .contentnav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+  }
+
+  .contentnav ul li a:hover{
+      color: grey;
+  }
+
+  .header {
+    background-color: #22376f;
+    padding: 2em;
+  }
+
+  .header div p {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    right: 2%;
+    top: 0.1em;
+  }
+
+  .header div .schriftzug {
+      position: absolute;
+      top: 1em;
+      left: 8em;
+  }
+
+  .navigation li a {
+    height: 5ex;
+    line-height: 5ex;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 700px) {
-.content-left {
-  display: none;
-}
+  .content-left {
+    display: none;
+  }
 
-.content-center {
-  display: flex;
-  flex: 0 0 100%;
-  flex-wrap: wrap;
-}
+  .content-center {
+    display: flex;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+  }
 
-#logo {
-  display: none;
-}
-.header {
-  background-color: #22376f;
-  height: 2em;
-  padding: 2em;
-}
-.header div .schriftzug {
-  position: absolute;
-  top: 1em;
-  right: 2%;
-}
-.header div p {
-  color: white;
-  font-size: 2em;
-  position: absolute;
-  right: 2%;
-  top: 0.1em;
-}
+  #logo {
+    display: none;
+  }
 
-.navigation li a {
-  height: 5ex;
-  line-height: 5ex;
-}
+  .header {
+    background-color: #22376f;
+    height: 2em;
+    padding: 2em;
+  }
 
-.footer div {
-  position: relative;
-  width: 50%;
-  left: 25%;
-  text-align: center;
-}
+  .header div .schriftzug {
+    position: absolute;
+    top: 1em;
+    right: 2%;
+  }
 
+  .header div p {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    right: 2%;
+    top: 0.1em;
+  }
+
+  .navigation li a {
+    height: 5ex;
+    line-height: 5ex;
+  }
+
+  .footer div {
+    position: relative;
+    width: 50%;
+    left: 25%;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 0px) and (max-width: 320px) {
-.content-left {
-  display: none;
-}
-.content-center {
-  display: flex;
-  flex: 0 0 100%;
-  flex-wrap: wrap;
-}
-#logo {
-  display: none;
-}
-.header {
-  display: none;
-}
-.navigation {
-  margin: 0;
-}
+  .content-left {
+    display: none;
+  }
 
-.navigation li a {
-  height: 3ex;
-  line-height: 3ex;
-}
+  .content-center {
+    display: flex;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .navigation {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation li a {
+    height: 3ex;
+    line-height: 3ex;
+  }
 }
