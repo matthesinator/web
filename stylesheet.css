@@ -169,13 +169,13 @@ body {
   cursor: pointer;
 }
 
-.center-paragraph h4 {
+.center-paragraph h4, h2 {
   cursor: pointer;
 }
 
 @media screen and (min-width: 1300px) {
   .contentnav ul {
-    font-size: 2.5vh;  
+    font-size: 2vh;  
   }
 
   .contentnav ul li a{
@@ -186,7 +186,7 @@ body {
 @media screen and (min-width: 701px) {
   .contentnav {
     width: 100%;
-    text-align: right;
+    text-align: left;
     position: sticky;
     top: 1em;
   }
@@ -307,4 +307,17 @@ body {
     height: 3ex;
     line-height: 3ex;
   }
+}
+
+.code {
+  font-family: "monospace";
+  letter-spacing: -2px;
+}
+
+.einfuehrung {
+  padding: 2px;
+  border: 2px solid green;
+  width: 50%;
+  position: relative;
+  left: 25%;
 }
