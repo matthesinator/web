@@ -2,10 +2,12 @@
     #abb1-1 {
         float: right;
         width: 50%;
+        max-width: 300px;
     }
 
     #abb1-2 {
         width: 30%;
+        max-width: 150px;
         float: left;
     }
 
