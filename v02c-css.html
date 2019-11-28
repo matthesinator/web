@@ -2,224 +2,170 @@
 <html lang="de">
 
 <head>
-  <title>Main Page</title>
-  <meta charset="UTF-8">
-  <link href="stylesheet.css" rel="stylesheet" />
-  <link href="v02c-data/v02c-style.css" rel="stylesheet" />
-  <link rel="icon" type="image/png" href="hsmalogo.png" />
+    <title>Main Page</title>
+    <meta charset="UTF-8">
+    <link href="stylesheet.css" rel="stylesheet" />
+    <link href="v02c-data/v02c-style.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="hsmalogo.png" />
 </head>
 
 <body>
-  <div class="page">
-    <div class="header">
-      <div>
-        <p>Gruppe A-5</p>
-        <img src="hsmalogo.png" id="logo">
-        <img src="hsmaschriftzug.png" alt="Hochschule Mannheim" class="schriftzug">
-      </div>
-    </div>
-
-    <nav>
-      <ul class="navigation">
-        <li><a href="mainpage.html">Start</a></li>
-        <li><a href="andereseite.html">V01</a></li>
-        <li><a href="">V02a</a></li>
-        <li><a href="">V02b</a></li>
-        <li><a id="activetab" href="v02c-css.html">V02c</a></li>
-        <li><a href="">V03a</a></li>
-        <li><a href="">V03b</a></li>
-        <li><a href="">V03c</a></li>
-      </ul>
-    </nav>
-
-    <div class="content-container">
-      <div class="content-left">
-        <nav class="contentnav">
-          <ul>
-            <li><a href="#allgemeines">Allgemeines</a></li>
-            <li><a href="#margin-border-padding">3.2 Margin, Border und Padding</a></li>
-            <li><a href="#overflow">3.3 Overflow</a></li>
-            <li><a href="#zusammenfassung-3">Zusammenfassung</a></li>
-            <li><a href="#uebungen-3">Übungen</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="content-center">
-        <h1>Die Sprache CSS3 im Detail</h1>
-        <hr>
-        <br>
-        <p class="beschreibung">
-          <img id="chapter-logo" src="v02c-data/css3-logo.png" alt="CSS3 Logo" width="15%" />
-          CSS3 wird benutzt um HTML-Dokumente zu stylen. Dieses Skript soll Ihnen die Grundlagen
-          der Benutzung von CSS3 beibringen. Die Abkürzung CSS steht für Cascading Style Sheets,
-          damit steckt der wichtigste Teil von CSS, die Kaskadierung schon im Namen.
-          <br>
-        </p>
-        <a id="skriptlink" href="v02c-data/CSS3 im Detail.pdf" target="_blank">→ CSS3 im Detail ←</a>
-        <p class="author">
-          Author: Matthes Würbs
-        </p>
-        <br><br>
-        <div class="leseprobe">
-          <h2 class="hider"><i class="pfeil-d"></i>Leseprobe</h2>
-          <div>
-            <h3>3 Das Box-Modell</h3>
-
-            <p class="einfuehrung">
-              In diesem Kapitel sollen sie mit dem Boxmodell sowie den dazugehörenden Eigenschaften vertraut gemacht
-              werden. Außerdem lernen sie, wie man die Breite eines Elements korrekt bestimmt und Inhalt an Boxen
-              anpasst.
-            </p>
-
-            <div class="center-paragraph">
-              <h4 id="allgemeines" class="hider"><i class="pfeil-d"></i>3.1 Allgemeines</h4>
-              <div>
-                <figure id="abb3-1">
-                  <figcaption>Abb 3.1: Das Box-Modell</figcaption>
-                  <a href="https://wiki.selfhtml.org/images/thumb/f/f3/Box-Modell.svg/900px-Box-Modell.svg.png">
-                    <img src="https://wiki.selfhtml.org/images/thumb/f/f3/Box-Modell.svg/900px-Box-Modell.svg.png"
-                      alt="Das Box-Modell" width="100%" /></a>
-
-                </figure>
-                <p class="clearfix">
-                  Eine HTML-Seite ist eine Ansammlung von Blöcken, von denn einige auch ineinander verschachtelt sind.
-                  Diese Blöcke kann man auch als Boxen
-                  betrachten, daher der Name. Das Wort Box-Modell fällt meistens im Zusammenhang mit Design und Layout
-                  einer Website. In CSS besteht eine Box
-                  aus vier Teilen: Inhalt (Content), Innenabstand (Padding), Rahmen (Border) und Außenabstand (Margin).
-                  Das Bild rechts veranschaulicht den
-                  Aufbau einer Box. Der Inhalt enthält das entsprechende HTML-Element, Innenabstand, Rahmen und
-                  Außenabstand werden durch CSS festgelegt.
-                  Die Größe des Inhalts kann ebenfalls per CSS festgelegt werden. Die Breite eines Elements ist folglich
-                  nicht nur die Breite des Inhalts,
-                  sonder berechnet sich wie folgt:
-                  <br>
-                  <span class="code">margin-left + border-left + padding-left + content-width + padding-right +
-                    border-right + margin-right</span>
-                  <br>
-                  Die Berechnung der Höhe verhält sich analog, man muss margin, border und padding sowohl oben als auch
-                  mit unten miteinbeziehen.
-
-                </p>
-              </div>
+    <div class="page">
+        <div class="header">
+            <div>
+                <p>Gruppe A-5</p>
+                <img src="hsmalogo.png" id="logo">
+                <img src="hsmaschriftzug.png" alt="Hochschule Mannheim" class="schriftzug">
             </div>
-
-            <div class="center-paragraph">
-              <h4 id="margin-border-padding" class="hider"><i class="pfeil-d"></i>3.2 Margin, Border und Padding</h4>
-              <div>
-                <p>
-                  Der Außenabstand legt den Abstand zum nächsten Element auf der gleichen Ebene fest. Der Bereich bleibt
-                  transparent. Mit margin-top, margin-left, margin-bottom und margin-right lassen sich die Abstände für
-                  jede
-                  Seite einzeln festlegen. Um sich die Schreibarbeit zu sparen kann man hier CSS-Shorthand anwenden: Man
-                  schreibt nur noch <span class="code">margin: [] [] [] [];</span> und setzt die gewünschten Werte in
-                  der
-                  Reihenfolge oben, links,
-                  unten, rechts ein. Falls die Werte alle gleich sind, reicht es, <span class="code">margin: [];</span>
-                  zu
-                  schreiben.
-                  Der Innenabstand legt den Abstand fest, den der Inhalt vom Rahmen hat. Dieser wird analog zum
-                  Außenabstand
-                  festgelegt, statt margin schreibt man jedoch padding. Auch hier gibt es die Möglichkeit, Shorthand zu
-                  nutzen.
-                  Der Rahmen, oder border, eines Elements zieht eine sichtbare Linie um dieses. Man kann die Dicke, die
-                  Farbe und den Stil des Rahmens mit border-width, border-color und border-style festlegen. Auch hier
-                  gibt
-                  es eine Shorthand Funktion, man schreibt einfach <span class="code">border: [] [] [];</span> und trägt
-                  die
-                  gewünschten Werte ein.
-                  Die Reihenfolge spielt keine Rolle. Will man die verschiedenen Kanten des Rahmens unterschiedlich
-                  gestalten, so ist auch dies möglich. Mit <span class="code"></span>border-[seite]: [] [] [];</span>
-                  lassen
-                  sich die Kanten einzeln
-                  definieren. Hier wird ebenfalls die Shorthand Schreibweise genutzt.
-                  Die geläufigsten border-styles sind solid, dotted, oder dashed. Außerdem lassen sich die Ecken mit
-                  border-radius abrunden. Weitere border-styles mit verschiedenen Radien sind in Abb. 3.2 zu sehen.
-                </p>
-                <figure id="abb3-2">
-                  <img src="v02c-data/Abb3.2.png" alt="Weitere Rahmenstile" />
-                  <figcaption>Abb. 3.2: Weitere Rahmenstile</figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <div class="center-paragraph">
-              <h4 id="overflow" class="hider"><i class="pfeil-d"></i>3.3 Overflow</h4>
-              <p>
-                Mit der Overflow-Eigenschaft (dt.: Überfluss) lässt sich festlegen, was mit Inhalt passiert, der über
-                die
-                vorgegebene Breite und Höhe hinaus ragt. Der default-Wert ist <span
-                  class="code">overflow:visible</span>,
-                dies bedeutet, dass der
-                Text auch über die vorgegebene Größe hinaus sichtbar ist und möglicherweise in andere Elemente
-                hineinragt.
-                Will man dies nicht, so stehen einem <span class="code">overflow:hidden</span> und <span
-                  class="code">overflow:scroll</span> zur Verfügung, welche den Inhalt,
-                welcher zu viel ist, auf verschiedene Arten verstecken. overflow:hidden schneidet das, was an Inhalt zu
-                viel ist, komplett ab. <span class="code">overflow:scroll</span> schneidet den Inhalt ebenfalls ab, fügt
-                der Box aber Scrollbars
-                hinzu, mit denen man durch den Inhalt in der Box scrollen kann. Es gibt auch noch einen vierten Wert,
-                overflow:auto. Wird dieser Wert genutzt, legt der Browser automatisch fest, welcher der anderen drei
-                Werte
-                angebracht ist. Praktischer ist es aber, den Overflow manuell festzulegen um ein konsistentes Aussehen
-                zu
-                garantieren.
-              </p>
-            </div>
-
-            <div class="center-paragraph">
-              <h4 id="zusammenfassung-3" class="hider"><i class="pfeil-d"></i>Zusammenfassung</h4>
-              <p> Das Ziel dieses kurzen Kapitels war es, Sie mit dem Box-Modell vertraut zu machen und Ihnen
-                darzulegen,
-                wie sie einzelne Elemente ihm Box-Modell richtig anordnen und mit Rahmen versehen. Außerdem wurde
-                beschrieben, wie man mit dem Fall umgeht, wenn der Inhalt einer Box über die vorgesehenen Maße
-                herausragt.
-              </p>
-            </div>
-
-            <div class="center-paragraph">
-              <h4 id="uebungen-3" class="hider"><i class="pfeil-d"></i>Übungen</h4>
-              <div>
-                <p class="uebung">
-                  <strong>Aufgabe 1:</strong><br>
-                  Aus was besteht eine Box im CSS Box-Modell?
-                </p>
-
-                <p class="uebung">
-                  <strong>Aufgabe 2:</strong><br>
-                  Berechnen sie die Breite des folgenden Elements:<br>
-                  <span class="code">p
-                    {margin: 10px; border: 2px solid black; padding: 5px; width: 50px;}</span>
-                </p>
-
-                <p class="uebung">
-                  <strong>Aufgabe 3:</strong><br>
-                  Wie verhindern Sie, dass der Inhalt einer Box über die festgelegte Größe hinausragt?
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
 
-      <div class="content-right">
-
-      </div>
-
-    </div>
-
-    <div class="footer">
-      <div>
         <nav>
-          <a href="datenschutz.html">Datenschutzbestimmung</a>
-          <br>
-          <a href="impressum.html">Impressum</a>
+            <ul class="navigation">
+                <li><a href="mainpage.html">Start</a></li>
+                <li><a href="andereseite.html">V01</a></li>
+                <li><a href="">V02a</a></li>
+                <li><a href="">V02b</a></li>
+                <li><a id="activetab" href="v02c-css.html">V02c</a></li>
+                <li><a href="">V03a</a></li>
+                <li><a href="">V03b</a></li>
+                <li><a href="">V03c</a></li>
+            </ul>
         </nav>
-      </div>
+
+        <div class="content-container">
+            <div class="content-left">
+                <nav class="contentnav">
+                    <ul>
+                        <li><a href="#allgemeines">Allgemeines</a></li>
+                        <li><a href="#margin-border-padding">3.2 Margin, Border und Padding</a></li>
+                        <li><a href="#overflow">3.3 Overflow</a></li>
+                        <li><a href="#zusammenfassung-3">Zusammenfassung</a></li>
+                        <li><a href="#uebungen-3">Übungen</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="content-center">
+                <h1>Die Sprache CSS3 im Detail</h1>
+                <hr>
+                <br>
+                <p class="beschreibung">
+                    <img id="chapter-logo" src="v02c-data/css3-logo.png" alt="CSS3 Logo" width="15%" /> CSS3 wird benutzt um HTML-Dokumente zu stylen. Dieses Skript soll Ihnen die Grundlagen der Benutzung von CSS3 beibringen. Die Abkürzung CSS steht für
+                    Cascading Style Sheets, damit steckt der wichtigste Teil von CSS, die Kaskadierung schon im Namen.
+                    <br>
+                </p>
+                <a id="skriptlink" href="v02c-data/CSS3 im Detail.pdf" target="_blank">→ CSS3 im Detail ←</a>
+                <p class="author">
+                    Author: Matthes Würbs
+                </p>
+                <br><br>
+                <div class="leseprobe">
+                    <div class="center-paragraph">
+                        <h2 class="hider"><i class="pfeil-d"></i>Leseprobe</h2>
+                        <h3>3 Das Box-Modell</h3>
+                    </div>
+                    <p class="einfuehrung">
+                        In diesem Kapitel sollen sie mit dem Boxmodell sowie den dazugehörenden Eigenschaften vertraut gemacht werden. Außerdem lernen sie, wie man die Breite eines Elements korrekt bestimmt und Inhalt an Boxen anpasst.
+                    </p>
+
+                    <div class="center-paragraph">
+                        <h4 id="allgemeines" class="hider"><i class="pfeil-d"></i>3.1 Allgemeines</h4>
+                        <div>
+                            <figure id="abb3-1">
+                                <figcaption>Abb 3.1: Das Box-Modell</figcaption>
+                                <a href="https://wiki.selfhtml.org/images/thumb/f/f3/Box-Modell.svg/900px-Box-Modell.svg.png">
+                                    <img src="https://wiki.selfhtml.org/images/thumb/f/f3/Box-Modell.svg/900px-Box-Modell.svg.png" alt="Das Box-Modell" width="100%" /></a>
+
+                            </figure>
+                            <p class="clearfix">
+                                Eine HTML-Seite ist eine Ansammlung von Blöcken, von denn einige auch ineinander verschachtelt sind. Diese Blöcke kann man auch als Boxen betrachten, daher der Name. Das Wort Box-Modell fällt meistens im Zusammenhang mit Design und Layout einer Website.
+                                In CSS besteht eine Box aus vier Teilen: Inhalt (Content), Innenabstand (Padding), Rahmen (Border) und Außenabstand (Margin). Das Bild rechts veranschaulicht den Aufbau einer Box. Der Inhalt enthält das entsprechende HTML-Element,
+                                Innenabstand, Rahmen und Außenabstand werden durch CSS festgelegt. Die Größe des Inhalts kann ebenfalls per CSS festgelegt werden. Die Breite eines Elements ist folglich nicht nur die Breite des Inhalts, sonder berechnet
+                                sich wie folgt:
+                                <br>
+                                <span class="code">margin-left + border-left + padding-left + content-width + padding-right +
+                    border-right + margin-right</span>
+                                <br> Die Berechnung der Höhe verhält sich analog, man muss margin, border und padding sowohl oben als auch mit unten miteinbeziehen.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="center-paragraph">
+                        <h4 id="margin-border-padding" class="hider"><i class="pfeil-d"></i>3.2 Margin, Border und Padding</h4>
+
+                        <p>
+                            Der Außenabstand legt den Abstand zum nächsten Element auf der gleichen Ebene fest. Der Bereich bleibt transparent. Mit margin-top, margin-left, margin-bottom und margin-right lassen sich die Abstände für jede Seite einzeln festlegen. Um sich die Schreibarbeit
+                            zu sparen kann man hier CSS-Shorthand anwenden: Man schreibt nur noch <span class="code">margin: [] [] [] [];</span> und setzt die gewünschten Werte in der Reihenfolge oben, links, unten, rechts
+                            ein. Falls die Werte alle gleich sind, reicht es, <span class="code">margin: [];</span> zu schreiben. Der Innenabstand legt den Abstand fest, den der Inhalt vom Rahmen hat. Dieser wird analog zum Außenabstand festgelegt, statt
+                            margin schreibt man jedoch padding. Auch hier gibt es die Möglichkeit, Shorthand zu nutzen. Der Rahmen, oder border, eines Elements zieht eine sichtbare Linie um dieses. Man kann die Dicke, die Farbe und den Stil des Rahmens
+                            mit border-width, border-color und border-style festlegen. Auch hier gibt es eine Shorthand Funktion, man schreibt einfach <span class="code">border: [] [] [];</span> und trägt die gewünschten Werte ein. Die Reihenfolge spielt
+                            keine Rolle. Will man die verschiedenen Kanten des Rahmens unterschiedlich gestalten, so ist auch dies möglich. Mit <span class="code"></span>border-[seite]: [] [] [];</span>
+                            lassen sich die Kanten einzeln definieren. Hier wird ebenfalls die Shorthand Schreibweise genutzt. Die geläufigsten border-styles sind solid, dotted, oder dashed. Außerdem lassen sich die Ecken mit border-radius abrunden. Weitere border-styles mit verschiedenen
+                            Radien sind in Abb. 3.2 zu sehen.
+                        </p>
+                        <figure id="abb3-2">
+                            <img src="v02c-data/Abb3.2.png" alt="Weitere Rahmenstile" width="100%" />
+                            <figcaption>Abb. 3.2: Weitere Rahmenstile</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="center-paragraph">
+                        <h4 id="overflow" class="hider"><i class="pfeil-d"></i>3.3 Overflow</h4>
+                        <p>
+                            Mit der Overflow-Eigenschaft (dt.: Überfluss) lässt sich festlegen, was mit Inhalt passiert, der über die vorgegebene Breite und Höhe hinaus ragt. Der default-Wert ist <span class="code">overflow:visible</span>, dies bedeutet,
+                            dass der Text auch über die vorgegebene Größe hinaus sichtbar ist und möglicherweise in andere Elemente hineinragt. Will man dies nicht, so stehen einem <span class="code">overflow:hidden</span> und <span class="code">overflow:scroll</span>                            zur Verfügung, welche den Inhalt, welcher zu viel ist, auf verschiedene Arten verstecken. overflow:hidden schneidet das, was an Inhalt zu viel ist, komplett ab. <span class="code">overflow:scroll</span> schneidet den Inhalt
+                            ebenfalls ab, fügt der Box aber Scrollbars hinzu, mit denen man durch den Inhalt in der Box scrollen kann. Es gibt auch noch einen vierten Wert, overflow:auto. Wird dieser Wert genutzt, legt der Browser automatisch fest, welcher
+                            der anderen drei Werte angebracht ist. Praktischer ist es aber, den Overflow manuell festzulegen um ein konsistentes Aussehen zu garantieren.
+                        </p>
+                    </div>
+
+                    <div class="center-paragraph">
+                        <h4 id="zusammenfassung-3" class="hider"><i class="pfeil-d"></i>Zusammenfassung</h4>
+                        <p> Das Ziel dieses kurzen Kapitels war es, Sie mit dem Box-Modell vertraut zu machen und Ihnen darzulegen, wie sie einzelne Elemente ihm Box-Modell richtig anordnen und mit Rahmen versehen. Außerdem wurde beschrieben, wie man mit
+                            dem Fall umgeht, wenn der Inhalt einer Box über die vorgesehenen Maße herausragt.
+                        </p>
+                    </div>
+
+                    <div class="center-paragraph">
+                        <h4 id="uebungen-3" class="hider"><i class="pfeil-d"></i>Übungen</h4>
+                        <div>
+                            <p class="uebung">
+                                <strong>Aufgabe 1:</strong><br> Aus was besteht eine Box im CSS Box-Modell?
+                            </p>
+
+                            <p class="uebung">
+                                <strong>Aufgabe 2:</strong><br> Berechnen sie die Breite des folgenden Elements:<br>
+                                <span class="code">p
+                    {margin: 10px; border: 2px solid black; padding: 5px; width: 50px;}</span>
+                            </p>
+
+                            <p class="uebung">
+                                <strong>Aufgabe 3:</strong><br> Wie verhindern Sie, dass der Inhalt einer Box über die festgelegte Größe hinausragt?
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="content-right">
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div>
+                <nav>
+                    <a href="datenschutz.html">Datenschutzbestimmung</a>
+                    <br>
+                    <a href="impressum.html">Impressum</a>
+                </nav>
+            </div>
+        </div>
     </div>
-  </div>
-  <script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
