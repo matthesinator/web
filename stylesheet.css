@@ -365,8 +365,9 @@ thead {
 }
 
 table {
+    margin: auto;
     margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 table, table tr, table td {
     border: 1px solid black;
