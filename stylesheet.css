@@ -72,7 +72,7 @@ body {
 }
 
 .content-center {
-    text-align: justify;
+    
     width: 50%;
 }
 
@@ -317,4 +317,30 @@ h2 {
     padding: 2px;
     min-height: 2.5em;
     line-height: 1.5em;
+}
+
+figcaption {
+    font-size: 0.8em;
+}
+
+caption {
+    font-size: 0.8em;
+}
+
+thead {
+    color: white;
+    background-color: black;
+}
+
+table {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+table, table tr, table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-left: 1ex;
+    padding-right: 1ex;
+    padding-top: 0.5ex;
+    padding-bottom: 0.5ex;
 }
