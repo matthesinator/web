@@ -1,0 +1,184 @@
+    #abb3-1 {
+        width: 40%;
+        float: right;
+        text-align: center;
+    }
+    
+    #abb3-2 {
+        width: 80%;
+        position: relative;
+    }
+
+    #abb1-1 {
+        float: right;
+        width: 50%;
+    }
+
+    #abb1-2 {
+        width: 30%;
+        float: left;
+    }
+
+    #abb2-1 {
+        width: 80%;
+    }
+
+    #abb2-2 {
+        width: 30%;
+        position: relative;
+        left: 20%;
+    }
+
+    #abb2-3 {
+        width: 40%;
+        position: relative;
+        left: -10%;
+        bottom: 20%;
+    }
+
+    #abb2-4 {
+        width: 40%;
+        position: absolute;
+        right: 0;
+        bottom: 15%;
+    }
+
+    #abb2-5 {
+        width: 40%;
+        position: relative;
+        left: -10%;
+        bottom: 0;
+    }
+
+    #abb2-6 {
+        width: 40%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    #abb4-1 {
+        width: 70%;
+        position: relative;
+        left: 10%;
+    }
+
+    #abb4-2 {
+        width: 40%;
+        float: right;
+    }
+
+    #abb5-1 {
+        float: right;
+        width: 50%;
+    }
+
+    #abb5-2 {
+        width: 80%;
+    }
+
+    #abb5-3 {
+        z-index: -1;
+        width: 45%;
+        position: relative;
+        left: -5%;
+    }
+
+    #abb5-4 {
+        z-index: -1;
+        width: 45%;
+        position: absolute;
+        top: -25%;
+        right: -5%;
+    }
+
+    #abb5-5 {
+        z-index: -1;
+        width: 45%;
+        position: relative;
+        left: -5%;
+    }
+
+    #abb5-6 {
+        z-index: -1;
+        width: 45%;
+        position: absolute;
+        top: -40%;
+        right: -5%;
+    }
+
+    #abb5-7 {
+        z-index: -1;
+        width: 45%;
+        position: relative;
+        left: -5%;
+    }
+
+    #abb5-8 {
+        z-index: -1;
+        width: 45%;
+        position: absolute;
+        top: -25%;
+        right: -5%;
+    }
+
+    #abb5-9 {
+        width: 40%;
+        position: relative;
+        left: 20%;
+    }
+
+    #tab1-1 {
+        width: 120%;
+    }
+
+    #tab1-1 #red {
+        background-color: red;
+        color: white;
+    }
+
+    #tab1-1 #blue {
+        background-color: blue;
+        color: white;
+    }
+
+    #tab1-1 #green {
+        background-color: green;
+        color: white;
+    }
+
+    #tab1-1 #goldenrod {
+        background-color: goldenrod;
+        color: white;
+    }
+
+    #tab1-1 #darkseagreen {
+        background-color: darkseagreen;
+        color: white;
+    }
+
+    #tab1-1 
+
+    #tab1-1, #tab1-1 tr, #tab1-1 td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 1ex;
+    }
+    
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .leseprobe {
+        display: flex;
+        flex: 0 0 100%;
+        flex-wrap: wrap;
+    }
+    
+    @media screen and (min-width: 320px) and (max-width: 700px) {
+        .content-center {
+            width: 100%;
+        }
+    }

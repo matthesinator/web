@@ -319,6 +319,24 @@ h2 {
     line-height: 1.5em;
 }
 
+.uebung::first-line {
+    font-weight: bold;
+}
+
+.warnung {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    border: 2px solid red;
+    padding: 2px;
+    min-height: 2.5em;
+    line-height: 1.5em;
+}
+
+.warnung::first-line {
+    font-weight: bold;
+}
+
 figcaption {
     font-size: 0.8em;
 }
