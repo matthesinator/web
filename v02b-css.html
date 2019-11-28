@@ -5,7 +5,7 @@
     <title>Main Page</title>
     <meta charset="UTF-8">
     <link href="stylesheet.css" rel="stylesheet" />
-    <link href="v02c-data/v02c-style.css" rel="stylesheet" />
+    <link href="v02b-data/v02b-style.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="hsmalogo.png" />
 </head>
 
@@ -36,11 +36,15 @@
             <div class="content-left">
                 <nav class="contentnav">
                     <ul>
-                        <li><a href="#allgemeines">Allgemeines</a></li>
-                        <li><a href="#margin-border-padding">3.2 Margin, Border und Padding</a></li>
-                        <li><a href="#overflow">3.3 Overflow</a></li>
-                        <li><a href="#zusammenfassung-3">Zusammenfassung</a></li>
-                        <li><a href="#uebungen-3">Übungen</a></li>
+                        <li><a href="#grundlagen">1 Grundlagen</a></li>
+                        <li><a href="#aufbau">2 Aufbau von CSS-Dokumenten</a></li>
+                        <li><a href="#box-modell">3 Das Box-Modell</a></li>
+                        <li><a href="#text-formatierung">4 Text und Textformatierung</a></li>
+                        <hr>
+                        <li><a href="#loesungen">A Lösungen</a></li>
+                        <li><a href="#literatur">B Literaturverzeichnis</a></li>
+                        <li><a href="#abbildungen">C Abbildungsverzeichnis</a></li>
+                        <li><a href="#tabellen">D Tabellenverzeichnis</a></li>
                     </ul>
                 </nav>
             </div>
@@ -50,21 +54,20 @@
                 <hr>
                 <br>
                 <p class="beschreibung">
-                    <img id="chapter-logo" src="v02c-data/css3-logo.png" alt="CSS3 Logo" width="15%" /> CSS3 wird
+                    <img id="chapter-logo" src="v02b-data/css3-logo.png" alt="CSS3 Logo" width="15%" /> CSS3 wird
                     benutzt um HTML-Dokumente zu stylen. Dieses Skript soll Ihnen die Grundlagen der Benutzung von CSS3
                     beibringen. Die Abkürzung CSS steht für
                     Cascading Style Sheets, damit steckt der wichtigste Teil von CSS, die Kaskadierung schon im Namen.
                     <br>
                 </p>
-                <a id="skriptlink" href="v02c-data/CSS3 im Detail.pdf" target="_blank">→ CSS3 im Detail ←</a>
+                <a id="skriptlink" href="v02b-data/CSS3 im Detail.pdf" target="_blank">→ CSS3 im Detail ←</a>
                 <p class="author">
                     Author: Matthes Würbs
                 </p>
                 <br><br>
                 <div class="leseprobe">
                     <div class="center-paragraph">
-                        <h2 class="hider"><i class="pfeil-d"></i>Leseprobe</h2>
-                        <h3>1 Grundlagen</h3>
+                        <h3 id="grundlagen">1 Grundlagen</h3>
                     </div>
                     <div class="einfuehrung clearfix">
                         <p>
@@ -122,7 +125,7 @@
                     <div class="center-paragraph">
                         <h4 id="kaskadierung" class="hider"><i class="pfeil-d"></i>1.3 Kaskadierung</h4>
                         <figure id="abb1-2">
-                            <img src="v02c-data/Abb1.2.png" width="100%" alt="Ein Beispiel" />
+                            <img src="v02b-data/Abb1.2.png" width="100%" alt="Ein Beispiel" />
                             <figcaption>Abb. 1.2: Der weiter unten definierte Wert wird angenommen</figcaption>
                         </figure>
                         <p>
@@ -404,7 +407,7 @@
                     </div>
 
                     <div class="center-paragraph">
-                        <h3>2 Aufbau von CSS-Dokumenten</h3>
+                        <h3 id="aufbau">2 Aufbau von CSS-Dokumenten</h3>
                     </div>
                     <p class="einfuehrung">
                         In diesem Kapitel lernen Sie, wie Sie ein CSS-Stylesheet aufbauen und wie sie das gewünschte
@@ -510,23 +513,23 @@
                                         zugrundeliegenden HTML-Code
                                     </p>
                                     <figure id="abb2-2">
-                                        <img src="v02c-data/Abb2.2.PNG" alt="HTML Grundlage" width="100%" />
+                                        <img src="v02b-data/Abb2.2.PNG" alt="HTML Grundlage" width="100%" />
                                         <figcaption>Abb. 2.2: HTML-Code für die folgenden Beispiele</figcaption>
                                     </figure>
                                     <figure id="abb2-3">
-                                        <img src="v02c-data/Abb2.3.png" alt="Nachfahren-Kombinator" width="100%" />
+                                        <img src="v02b-data/Abb2.3.png" alt="Nachfahren-Kombinator" width="100%" />
                                         <figcaption>Abb. 2.3: Der Nachbar-Kombinator</figcaption>
                                     </figure>
                                     <figure id="abb2-4">
-                                        <img src="v02c-data/Abb2.4.png" alt="Kind-Kombinator" width="100%" />
+                                        <img src="v02b-data/Abb2.4.png" alt="Kind-Kombinator" width="100%" />
                                         <figcaption>Abb. 2.4: Der Kind-Kombinator</figcaption>
                                     </figure>
                                     <figure id="abb2-5">
-                                        <img src="v02c-data/Abb2.5.png" alt="Nachbar-Kombinator" width="100%" />
+                                        <img src="v02b-data/Abb2.5.png" alt="Nachbar-Kombinator" width="100%" />
                                         <figcaption>Abb. 2.5: Der Nachbar-Kombinator</figcaption>
                                     </figure>
                                     <figure id="abb2-6">
-                                        <img src="v02c-data/Abb2.6.png" alt="Geschwister-Kombinator" width="100%" />
+                                        <img src="v02b-data/Abb2.6.png" alt="Geschwister-Kombinator" width="100%" />
                                         <figcaption>Abb. 2.6: Der Geschwister-Kombinator</figcaption>
                                     </figure>
                                 </div>
@@ -680,7 +683,7 @@
                     </div>
 
                     <div class="center-paragraph">
-                        <h3>3 Das Box Modell</h3>
+                        <h3 id="box-modell">3 Das Box Modell</h3>
                     </div>
                     <p class="einfuehrung">
                         In diesem Kapitel sollen sie mit dem Boxmodell sowie den dazugehörenden Eigenschaften vertraut
@@ -750,7 +753,7 @@
                                 Radien sind in Abb. 3.2 zu sehen.
                             </p>
                             <figure id="abb3-2">
-                                <img src="v02c-data/Abb3.2.png" alt="Weitere Rahmenstile" width="100%" />
+                                <img src="v02b-data/Abb3.2.png" alt="Weitere Rahmenstile" width="100%" />
                                 <figcaption>Abb. 3.2: Weitere Rahmenstile</figcaption>
                             </figure>
                         </div>
@@ -806,7 +809,7 @@
                     </div>
 
                     <div class="center-paragraph">
-                        <h3>4 Text und Textformatierung</h3>
+                        <h3 id="text-formatierung">4 Text und Textformatierung</h3>
                     </div>
                     <p class="einfuehrung">
                         Ziel dieses Kapitels ist es, Ihnen Schriftarten und deren Familien näher zu bringen und Ihnen
@@ -928,7 +931,7 @@
                         <h4 id="textlayout" class="hider"><i class="pfeil-d"></i>4.3 Textlayout</h4>
                         <div>
                             <figure id="abb4-2">
-                                <img src="v02c-data/Abb4.2.png" alt="beispiel text align justify" width="100%" />
+                                <img src="v02b-data/Abb4.2.png" alt="beispiel text align justify" width="100%" />
                                 <figcaption>Abb. 4.2: text-align: justify;</figcaption>
                             </figure>
                             <p>
@@ -1007,7 +1010,7 @@
                     </div>
 
                     <div class="center-paragraph">
-                        <h3>5 Layout</h3>
+                        <h3 id="layout">5 Layout</h3>
                     </div>
                     <p class="einfuehrung">
                         Im Verlauf dieses Kapitels werden Ihnen die Grundlagen des Layout-Managments vorgestellt. Nach
@@ -1036,7 +1039,7 @@
                                 keine Auswirkung.
                             </p>
                             <figure id="abb5-1">
-                                <img src="v02c-data/Abb5.1.png" alt="position: relative; beispiel" width="100%" />
+                                <img src="v02b-data/Abb5.1.png" alt="position: relative; beispiel" width="100%" />
                                 <figcaption><span class="code">Abb. 5.1: position: relative; top: 2px; left: 10px</span>
                                 </figcaption>
                             </figure>
@@ -1078,7 +1081,7 @@
                                 <h4 id="z-index" class="hider"><i class="pfeil-d"></i>5.1.1 Der z-Index</h4>
                                 <div>
                                     <figure id="abb5-2">
-                                        <img src="v02c-data/Abb5.2.png" alt="z-index beispiel" width="100%" />
+                                        <img src="v02b-data/Abb5.2.png" alt="z-index beispiel" width="100%" />
                                         <figcaption>Abb. 5.2: links: grün hat z-index: -1, rechts: grün hat z-index 1
                                         </figcaption>
                                     </figure>
@@ -1115,12 +1118,12 @@
                             </p>
                             <div style="position: relative; margin-bottom: 2em;">
                                 <figure id="abb5-3">
-                                    <img src="v02c-data/Abb5.3.png" alt="mit float" width="100%" />
+                                    <img src="v02b-data/Abb5.3.png" alt="mit float" width="100%" />
                                     <figcaption>Abb. 5.3: Der blaue Block wurde mittels float:left platziert
                                     </figcaption>
                                 </figure>
                                 <figure id="abb5-4">
-                                    <img src="v02c-data/Abb5.4.png" alt="ohne float" width="100%" />
+                                    <img src="v02b-data/Abb5.4.png" alt="ohne float" width="100%" />
                                     <figcaption>Abb. 5.4: Das gleiche Beispiel ohne float
                                     </figcaption>
                                 </figure>
@@ -1142,12 +1145,12 @@
                             </p>
                             <div style="position: relative; margin-bottom: 2em;">
                                 <figure id="abb5-5">
-                                    <img src="v02c-data/Abb5.5.png" alt="ohne clear" width="100%" />
+                                    <img src="v02b-data/Abb5.5.png" alt="ohne clear" width="100%" />
                                     <figcaption>Abb. 5.5: Der blaue Block wurde mittels float:right platziert
                                     </figcaption>
                                 </figure>
                                 <figure id="abb5-6">
-                                    <img src="v02c-data/Abb5.6.png" alt="mit clear" width="100%" />
+                                    <img src="v02b-data/Abb5.6.png" alt="mit clear" width="100%" />
                                     <figcaption>Abb. 5.6: Der Textabschnitt wird mittels clear:right von schwebenden
                                         Elementen freigehalten
                                     </figcaption>
@@ -1166,12 +1169,12 @@
                                     </p>
                                     <div style="position: relative; margin-bottom: 2em;">
                                         <figure id="abb5-7">
-                                            <img src="v02c-data/Abb5.7.png" alt="ohne clearfix" width="100%" />
+                                            <img src="v02b-data/Abb5.7.png" alt="ohne clearfix" width="100%" />
                                             <figcaption>Abb. 5.7: Beispiel ohne Clearfix
                                             </figcaption>
                                         </figure>
                                         <figure id="abb5-8">
-                                            <img src="v02c-data/Abb5.8.png" alt="mit clearfix" width="100%" />
+                                            <img src="v02b-data/Abb5.8.png" alt="mit clearfix" width="100%" />
                                             <figcaption>Abb. 5.8: Beispiel mit Clearfix
                                             </figcaption>
                                         </figure>
@@ -1192,7 +1195,7 @@
                                         braucht, nochmal.
                                     </p>
                                     <figure id="abb5-9">
-                                        <img src="v02c-data/Abb5.9.png" alt="clearfix regel" width="100%" />
+                                        <img src="v02b-data/Abb5.9.png" alt="clearfix regel" width="100%" />
                                         <figcaption>Abb. 5.9: Die Clearfix-Regel
                                         </figcaption>
                                     </figure>
@@ -1238,7 +1241,7 @@
                     </div>
 
                     <div class="center-paragraph">
-                        <h4 id="id" class="hider"><i class="pfeil-d"></i>A Lösungen</h4>
+                        <h4 id="loesungen" class="hider"><i class="pfeil-d"></i>A Lösungen</h4>
                         <p>
                             1.1<br>
                             CSS, also Cascading Style Sheets, ist eine Designsprache, die es ermöglicht, Webseiten bis
@@ -1306,7 +1309,7 @@
                     </div>
 
                     <div class="center-paragraph">
-                        <h4 id="id" class="hider"><i class="pfeil-d"></i>B Literaturverzeichnis</h4>
+                        <h4 id="literatur" class="hider"><i class="pfeil-d"></i>B Literaturverzeichnis</h4>
                         <p>
                             Andy Budd, Emil Björklund: CSS Mastery; Apress Verlag; 2016; DOI
                             https://doi.org/10.1007/978-1-4302-5864-3<br><br>
@@ -1317,7 +1320,7 @@
                     </div>
 
                     <div class="center-paragraph">
-                        <h4 id="id" class="hider"><i class="pfeil-d"></i>C Abbildungsverzeichnis</h4>
+                        <h4 id="abbildungen" class="hider"><i class="pfeil-d"></i>C Abbildungsverzeichnis</h4>
                         <p>
                             Abb. 1.1: Responsives Webdesign<br>
                             Abb. 1.2: Der weiter unten definierte Wert wird angenommen<br>
@@ -1345,7 +1348,7 @@
                     </div>
 
                     <div class="center-paragraph">
-                        <h4 id="id" class="hider"><i class="pfeil-d"></i>D Tabellenverzeichnis</h4>
+                        <h4 id="tabellen" class="hider"><i class="pfeil-d"></i>D Tabellenverzeichnis</h4>
                         <p>
                             Tab. 1.1: Vergleich verschiedener Farben und ihrer Schreibweisen<br>
                             Tab. 1.2: Relative Längeneinheiten<br>
