@@ -173,7 +173,6 @@
         color: white;
     }
 
-    #tab1-1 
 
     #tab1-1, #tab1-1 tr, #tab1-1 td {
         border: 1px solid black;
@@ -196,5 +195,29 @@
     @media screen and (min-width: 320px) and (max-width: 700px) {
         .content-center {
             width: 100%;
+        }
+
+        #tab1-1 .hide {
+            display: none;
+        } 
+
+        #abb2-3 {
+            position: static;
+            float: none;
+        }
+        
+        #abb2-4 {
+            position: static;
+            float: none;
+        }
+
+        #abb2-5 {
+            position: static;
+            float: none;
+        }
+
+        #abb2-6 {
+            position: static;
+            float: none;
         }
     }
