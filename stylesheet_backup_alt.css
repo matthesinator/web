@@ -16,20 +16,6 @@ body {
     min-height: 100vh;
 }
 
-.header div .schriftzug {
-    position: absolute;
-    top: 1em;
-    left: 8em;
-}
-
-.header div p {
-    color: white;
-    font-size: 2em;
-    position: absolute;
-    right: 2%;
-    top: 10px;
-}
-
 .navigation {
     list-style-type: none;
     background-color: #22376f;
@@ -89,10 +75,6 @@ body {
     width: 50%;
 }
 
-.content-right {
-    width: 25%;
-}
-
 .content-center h1,
 h2,
 h3 {
@@ -141,6 +123,10 @@ h3 {
 
 #skriptlink:hover {
     color: grey;
+}
+
+.content-right {
+    width: 25%;
 }
 
 .footer {
@@ -192,7 +178,16 @@ h2 {
     cursor: pointer;
 }
 
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 1300px) {
+    .contentnav ul {
+        font-size: 2em;
+    }
+    .contentnav ul li a {
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 701px) {
     .contentnav {
         width: 100%;
         text-align: left;
@@ -200,14 +195,8 @@ h2 {
         top: 1em;
     }
     .contentnav ul {
-        font-size: 1.2vw;
         padding-right: 20%;
         list-style-type: none;
-    }
-    .contentnav ul li {
-        border: 1px dotted black;
-        margin: 5px 0 5px 0;
-        padding-left: 5px;
     }
     .contentnav ul li a {
         text-decoration: none;
@@ -217,12 +206,21 @@ h2 {
     .contentnav ul li a:hover {
         color: grey;
     }
-}
-
-@media screen and (min-width: 701px) {
     .header {
         background-color: #22376f;
         padding: 2em;
+    }
+    .header div p {
+        color: white;
+        font-size: 2em;
+        position: absolute;
+        right: 2%;
+        top: 0.1em;
+    }
+    .header div .schriftzug {
+        position: absolute;
+        top: 1em;
+        left: 8em;
     }
     .navigation li a {
         height: 5ex;
@@ -230,22 +228,7 @@ h2 {
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 1360px) {
-    .navigation {
-        margin: 1em 0 1em 0;
-        padding: 0;
-    }
-    .navigation li {
-        width: 50%;
-    }
-    .navigation li a {
-        width: 100%;
-        height: 3ex;
-        line-height: 3ex;
-    }
-}
-
-@media screen and (min-width: 920px) and (max-width: 1299px) {
+@media screen and (min-width: 701px) and (max-width: 1299px) {
     .content-right {
         display: none;
     }
@@ -258,38 +241,42 @@ h2 {
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 920px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
     .content-left {
         display: none;
     }
     .content-right {
         display: none;
     }
-    .content-center {
-        width: 100%;
+    #logo {
+        display: none;
     }
     .header {
         background-color: #22376f;
+        height: 2em;
         padding: 2em;
+    }
+    .header div .schriftzug {
+        position: absolute;
+        top: 1em;
+        right: 2%;
+    }
+    .header div p {
+        color: white;
+        font-size: 2em;
+        position: absolute;
+        right: 2%;
+        top: 0.1em;
+    }
+    .navigation li a {
+        height: 5ex;
+        line-height: 5ex;
     }
     .footer div {
         position: relative;
         width: 50%;
         left: 25%;
         text-align: center;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    #logo {
-        display: none;
-    }
-    .header {
-        height: 2ex;
-    }
-    .header div .schriftzug {
-        right: 2%;
-        left: auto;
     }
 }
 
@@ -304,6 +291,9 @@ h2 {
         display: flex;
         flex: 0 0 100%;
         flex-wrap: wrap;
+    }
+    #logo {
+        display: none;
     }
     .header {
         display: none;
