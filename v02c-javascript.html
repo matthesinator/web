@@ -36,373 +36,124 @@
             <div class="content-left">
                 <nav class="contentnav">
                     <ul>
-                        <li><a href="#grundlagen">1 Grundlagen</a></li>
-                        <li><a href="#aufbau">2 Aufbau von CSS-Dokumenten</a></li>
-                        <li><a href="#box-modell">3 Das Box-Modell</a></li>
-                        <li><a href="#text-formatierung">4 Text und Textformatierung</a></li>
+                        <li><a href="#wasist">1 Was ist JavaScript?</a></li>
+                        <li><a href="#integration">2 Integration in HTML</a></li>
+                        <li><a href="#variablen">3 Variablen, Datentypen und Merkmale</a></li>
+                        <li><a href="#kontrollstrukturen">4 Kontrollstrukturen</a></li>
+                        <li><a href="#arrays">5 Arrays</a></li>
+                        <li><a href="#funktionen">6 Funktionen</a></li>
+                        <li><a href="#debugging">7 JavaScript-Debugging in FireFox</a></li>
+                        <li><a href="#dom">8 Der DOM-Baum</a></li>
+                        <li><a href="#asynchron">9 Asynchrone Verarbeitung mit Event-Handling</a></li>
+                        <li><a href="#jquery">10 Ausblick auf JQuery</a></li>
                         <hr>
                         <li><a href="#loesungen">A Lösungen</a></li>
                         <li><a href="#literatur">B Literaturverzeichnis</a></li>
                         <li><a href="#abbildungen">C Abbildungsverzeichnis</a></li>
-                        <li><a href="#tabellen">D Tabellenverzeichnis</a></li>
+                        <li><a href="#codes">D Codebeispielverzeichnis</a></li>
                     </ul>
                 </nav>
             </div>
 
             <div class="content-center">
-                <h1>Die Sprache CSS3 im Detail</h1>
+                <h1>Die Sprache JavaScript im Detail</h1>
                 <hr>
                 <br>
                 <p class="beschreibung">
-                    <img id="chapter-logo" src="v02b-data/css3-logo.png" alt="CSS3 Logo" width="15%" /> CSS3 wird
-                    benutzt um HTML-Dokumente zu stylen. Dieses Skript soll Ihnen die Grundlagen der Benutzung von CSS3
-                    beibringen. Die Abkürzung CSS steht für
-                    Cascading Style Sheets, damit steckt der wichtigste Teil von CSS, die Kaskadierung schon im Namen.
+                    <img id="chapter-logo" src="v02c-data/javascript-logo.png" alt="JavaScript Logo" width="15%" /> JavaScript ist für die Entwicklung dynamischer Webseiten unerlässlich.
+                     Es ergänzt dabei andere Sprachen wie HTML und CSS. Dieses Skript soll ein Grundverständnis für die Sprache schaffen.
                     <br>
                 </p>
-                <a id="skriptlink" href="v02b-data/CSS3 im Detail.pdf" target="_blank">→ CSS3 im Detail ←</a>
+                <a id="skriptlink" href="v02c-data/JavaScript im Detail.pdf" target="_blank">→ JavaScript ←</a>
                 <p class="author">
-                    Author: Matthes Würbs
+                    Autor: Leon Raab
                 </p>
                 <br><br>
                 <div class="leseprobe">
                     <div class="center-paragraph">
-                        <h3 id="grundlagen">1 Grundlagen</h3>
+                        <h3 id="wasist">1 Grundlagen</h3>
                     </div>
                     <div class="einfuehrung clearfix">
                         <p>
-                            Ziel dieses Kapitels ist es, Sie mit den Grundlagen von CSS vertraut zu machen. Nach diesem
-                            Kapitel sollten Sie in der Lage sein,
+                            Dieses Kapitel beschäftigt sich mit dem Grundbegriff JavaScript und dessen Einordnung, sowie einem kurzen historischen Abriss über die Entwicklung der Sprache. Abschließend werden grundlegende Merkmale und Eigenschaften vorgestellt.
+Sie sollten nach Durcharbeiten dieses Kapitels in der Lage sein,
+
                         </p>
                         <ul>
-                            <li>den Nutzen von CSS zu sehen</li>
-                            <li>Responsives Webdesign zu verstehen</li>
-                            <li>CSS in ein HTML-Dokument einzubinden</li>
-                            <li>Farben und Maßangaben zu benutzen</li>
-                            <li>Kaskadierung zu verstehen</li>
+                            <li>das Anwendungsgebiet von JavaScript darzustellen und einzuordnen,</li>
+                            <li>zu wissen, wie sich JavaScript entwickelt hat und was diese Entwicklung maßgeblich beeinflusste, sowie</li>
+                            <li>grundlegende Merkmale der Sprache wie den Aufbau und die Struktur grob zu kennen.</li>
                         </ul>
                     </div>
 
                     <div class="center-paragraph">
-                        <h4 id="was-ist-css" class="hider"><i class="pfeil-d"></i>1.1 Was ist CSS?</h4>
+                        <h4 id="jsbegriff" class="hider"><i class="pfeil-d"></i>1.1 Begriff</h4>
                         <p>
-                            CSS, kurz für Cascading Style Sheets, ist eine Sprache, um HTML-Seiten gestalterisch zu
-                            bearbeiten. Die Hauptidee hinter CSS war, Inhalte von Gestaltung zu trennen. Der Vorteil
-                            hiervon liegt darin, das Stylesheet nur einmal schreiben zu müssen und es trotzdem auf
-                            verschiedene HTML-Dokumente anwenden zu können. Es erlaubt die Anpassung von allen möglichen
-                            inhaltlichen Elementen wie Farben, Layout oder Text. Die Dateiendung von CSS-Dateien lautet
-                            .css.
+                            JavaScript ist heutzutage eine der meist verwendeten Programmiersprachen. Als Einsatzgebiet gilt in erster Linie die webbezogene Programmierung. Hierbei ist zu beachten, dass JavaScript eine Art Ergänzung zu anderen Sprachen darstellt. Sie tritt also nur sehr unwahrscheinlich alleinstehend auf, sondern bildet einen  der Bausteine zur Entwicklung einer Webseite oder Anwendung.
+                            <figure id="abb1-1">
+                                <img src="https://wiki.selfhtml.org/images/thumb/7/78/HTML-CSS-JS.svg/400px-HTML-CSS-JS.svg.png"
+                                    alt="Bausteine HTML, CSS & JS" width="100%" />
+                                <figcaption>Abb. 1.1: Die Bausteine HTML, CSS und JavaScript</figcaption>
+                            </figure>
+                            In der Abbildung ist zu erkennen, wie das Zusammenspiel verschiedener Technologien aufgebaut ist, um letztendlich eine Webseite zu erzeugen. So bestimmt HTML die Struktur und den Inhalt der Seite, CSS ist für das Layout und die Designmerkmale zuständig. Die Hauptaufgabe von JavaScript besteht darin, den HTML Code einer Seite zu unterstützen und dynamischer zu machen. Dies erfolgt durch diverse Funktionen wie den Inhalt einer Seite clientseitig zu generieren, ohne dass die Seite jedes Mal neu angefordert und geladen werden muss. Durch Auswerten des Verhaltens des Benutzers oder die clientseitige Überprüfung von Formularen wird somit eine Webseite mit der nötigen Interaktivität versorgt, welche heutzutage von den meisten Benutzern gewünscht oder sogar vorausgesetzt ist.
+JavaScript ist zudem eine interpretierende Sprache, wobei der Internet-Browser den Interpreter darstellt. Hierbei sind alle gängigen Browser dazu in der Lage, JavaScript zu interpretieren.
                         </p>
                     </div>
 
                     <div class="center-paragraph">
-                        <h4 id="responsives-webdesign" class="hider"><i class="pfeil-d"></i>1.2 Responsives Webdesign
+                        <h4 id="jshistorisch" class="hider"><i class="pfeil-d"></i>1.2 Historischer Abriss
                         </h4>
                         <div>
-                            <figure id="abb1-1">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Responsive_Web_Design.png"
-                                    alt="Responsive Webdesign" width="100%" />
-                                <figcaption>Abb. 1.1: Responsives Webdesign</figcaption>
+                            <p>
+                                Nachfolgend gibt es zunächst einen kurzen historischen Abriss zur Entwicklung des heutigen JavaScripts. Die Sprache ist circa zwischen 1995 und 1996 von Brendan Eich von Netscape Communications entwickelt worden, wobei sie zunächst den Namen Mocha und später LiveScript trug. Die Marketingabteilung der Firma entschloss sich kurze Zeit später, es wäre eine gute Idee, die derzeitige Popularität der Sprache Java zu nutzen und daraus Profit zu schlagen, weswegen sie sich dazu entschieden, die Sprache letztendlich in JavaScript umzubenennen. Darauf folgte jedoch Verwirrung bei den Anwendern, da JavaScript im Grunde nur sehr wenig mit Java zu tun hatte und auch die Anwendungsgebiete unterschiedlich waren [vgl. SS11]. 
+Trotz all dem erkannten Programmierer bereits früh die oben erwähnten Vorteile und die Nützlichkeit der Sprache gegenüber reinem HTML. Unterstützt wurde die zunehmende Popularität vor allem durch die Einbindung in den zu der Zeit weit verbreiteten Netscape Navigator (seit Version 2.0 [SK09]). Zwar war die erste Implementierung im Browser noch wenig zufriedenstellend, es wurde jedoch stetig verbessert und weiterentwickelt. 
+Maßgeblich beeinflusst wurde die Entwicklung von JavaScript zudem durch einen starken Konkurrenzkampf zwischen JavaScript von Netscape und der parallel entwickelten Sprache JScript von Microsoft und deren Internet Explorers. Jahrelang gab es ein sprichwörtliches Wettrennen der beiden Anbieter. Hierbei entstand zudem mit der European Computer Manufacturers Association ab 1997 das sogenannte ECMAScript.<br>
+Das ECMAScript legt fest, wie ein JavaScript System zu funktionieren hat, um die Unterschiede möglichst gering zu halten. Somit bildet es den Sprachkern von JavaScript und wird auch oft als offizieller Name verwendet. Es legt beispielsweise die verschiedenen Sprachelemente wie Datentypen oder Kontrollstrukturen und Sicherheitsaspekte fest. Der Standard sagt jedoch nichts über die letztendliche Einbindung in einen Webbrowser aus. Hierfür gibt es andere Standards, wie zum Beispiel das Document Object Model (DOM), auf das später noch genauer eingegangen wird. Auch diese Dokumente wurden und werden mit der Zeit stetig weiterentwickelt und alle populären Browser haben sie implementiert. Die aktuelle Version hat die Bezeichnung ECMAScript 2019.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="center-paragraph">
+                        <h4 id="jsmerkmale" class="hider"><i class="pfeil-d"></i>1.3 Merkmale und Eigenschaften</h4>
+            
+                        <p>
+                            Ein JavaScript-Programm besteht grundsätzlich aus einer oder mehreren Anweisungen. Diese werden wiederum aus verschiedenen Teilen zusammengesetzt, und zwar Schlüsselwörter, Operatoren, Bezeichner und Literale. <br>
+                            Ein kleines Beispiel, um diese Teile zu erklären sieht wie folgt aus:
+                            <figure id="abb1-2">
+                                <img src="v02c-data/1.1.png" width="150%" alt="Beispiel 1.1" />
+                                <figcaption>Codebsp. 1.1:	Einfache JavaScript-Zuweisung</figcaption>
                             </figure>
-                            <p>
-                                Das Responsive Webdesign ist eine Vorgehensweise beim Designen von Websites. Nach dieser
-                                Vorgehensweise ist es das Ziel, „Websites flexibel und reaktionsfähig zu gestalten.“
-                                [Zil12,
-                                S.8] Dabei wird nicht nur die Ausrichtung der verschiedenen Endgeräte beachtet, die in
-                                Abb.
-                                1.1 exemplarisch dargestellt werden, sondern auch die Auflösung und Eingabemöglichkeiten
-                                dieser. Um dies zu vereinfachen, bietet CSS verschiedene Möglichkeiten. Beispielsweise
-                                kann
-                                man für verschiedene Endgeräte verschiedene Stylesheets erstellen, welche dasselbe
-                                HTML-Dokument stylen. Mehr dazu im Punkt „Einbinden von CSS“. Außerdem gibt es in CSS
-                                verschiedene skalierbare Maßeinheiten, welche das Anpassen an verschieden
-                                Bildschirmgrößen
-                                vereinfachen.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="center-paragraph">
-                        <h4 id="kaskadierung" class="hider"><i class="pfeil-d"></i>1.3 Kaskadierung</h4>
-                        <figure id="abb1-2">
-                            <img src="v02b-data/Abb1.2.png" width="100%" alt="Ein Beispiel" />
-                            <figcaption>Abb. 1.2: Der weiter unten definierte Wert wird angenommen</figcaption>
-                        </figure>
-                        <p>
-                            Grundsätzlich bezeichnet Kaskadierung das Aneinanderreihen verschiedener Elemente. Im Fall
-                            von CSS funktioniert Kaskadierung so, dass jeder Regel eine bestimmte Wichtigkeit zugeordnet
-                            wird. Die Regel, welche für ein Element die Höchste Wichtigkeit hat, bestimmt den Stil für
-                            dieses Element, vgl. [BB16, S29]. Sind zwei Regeln gleich wichtig, wird der Stil der Regel
-                            angewendet, die später festgelegt wird, wie in Abb. 1.2 dargelegt. Auch der Browser des
-                            Nutzers hat (sehr grundlegende) Regeln, diese sind jedoch am wenigstens wichtig, vgl. [HB11,
-                            S.81]
+                            Diese Anweisung beginnt mit einem Schlüsselwort (var), gefolgt von einem Bezeichner (simpleNumber), einem Operator (=) und letztendlich einem Wert (6). Weiterführend werden Anweisungen dann in einer bestimmten Anordnung im Programm festgelegt, wodurch eine oder mehrere Funktionen ausgeführt werden können. Zudem gibt es von JavaScript fest definierte Funktionen, die in Programmen verwendet werden können. Einige von diesen werden im Folgenden noch vorgestellt. 
+In JavaScript kann man sowohl prozedural entwickeln, also über einfache Funktionen wie oben beschrieben, es besteht aber auch die Möglichkeit, einen objektorientierten Programmieransatz zu wählen, was jedoch ein wenig komplexer ist.
+Eine weitere Eigenschaft der Sprache ist die Typisierung. Diese erfolgt vollständig dynamisch, die Variablen haben also bei der Deklaration keinen bestimmten Datentyp, sondern erst zur Laufzeit, sobald sie mit echten Werten instanziiert und belegt sind. 
+Hauptanwendungsgebiet von JavaScript ist die Client-Seite (CSJS), das bedeutet, dass JavaScript auf der Seite des Benutzers, also auf dem Computer oder mobilen Endgerät, im Browser ausgeführt wird. Daneben gibt es auch serverseitiges JavaScript (SSJS), dieses unterscheidet sich durch den anderen Einsatzzweck nur geringfügig vom clientseitigen JavaScript, wird jedoch im Gegensatz zu anderen Sprachen wie Perl oder PHP nur selten verwendet. 
                         </p>
-                    </div>
-
-                    <div class="center-paragraph">
-                        <h4 id="vorbereitung" class="hider"><i class="pfeil-d"></i>1.4 Vorbereitung im HTML-Code</h4>
-                        <p>
-                            Grundsätzlich kann man für jedes HTML-Element einen Style angeben. Da dies jedoch nur sehr
-                            grobes Styling ermöglicht, sollte man seinen HTML-Code mit verschiedenen HTML-Tags
-                            strukturieren, um diesen genauer stylen zu können. Will man einen kompletten Block stylen,
-                            bietet sich beispielsweise der <span class="code">&ltdiv>...&lt/div></span> Tag an, falls es
-                            sich nur um einen Abschnitt
-                            in einem Paragraph (<span class="code">&ltp>...&lt/p></span>) handelt, kann man diesen mit
-                            <span class="code">&ltspan>...&lt/span></span> umschließen.
-                            Um verschiedene Tags der gleichen Art unterscheiden zu können, kann man ihnen mit dem
-                            class=““-Attribut eine Klasse zuteilen, oder man teilt ihnen mit dem id=““-Attribut einen
-                            eindeutigen Identifikator zu. Letzteres sollte man nur machen, wenn man nur genau ein
-                            Element stylen will. Hat man mehrere Elemente, die man gleich stylen will, sollte man ihnen
-                            dieselbe Klasse zuweisen.
-                            IDs und Klassennamen können nicht mit Zahlen beginnen, diese aber enthalten. Mehrere Wörter
-                            sollten durch Bindestriche getrennt werden, camelCase ist nicht angebracht. Will man eine
-                            Variation eines Elements oder einer Klasse benennen, bieten sich zwei Bindestriche an (zB
-                            <span class="code">btn—warning</span>), für Kinder eines Elements zwei Unterstrichte (zB
-                            <span class="code">btn__text</span>)
-                        </p>
-                    </div>
-
-                    <div class="center-paragraph">
-                        <h4 id="einbinden" class="hider"><i class="pfeil-d"></i>1.5 Einbinden von CSS</h4>
-                        <p>
-                            Um CSS in ein HTML-Dokument einzubinden, gibt es mehrere Möglichkeiten. Am direktesten ist
-                            es, das style=““-Attribut zu benutzen, welches man auf die meisten HTML-Tags anwenden kann.
-                            Der so genannte „<strong>Inline-Style</strong>“ hat die größte Gewichtung, überschreibt also
-                            alle anderen
-                            Stylevorgaben, jedoch ist diese Art des Stylings zu vermeiden da man nur ein einziges
-                            Element (und eventuelle Kinder) per style-Attribut stylen kann. Somit müsste man das für
-                            jedes andere Element in jedem anderem Dokument wiederholen. Außerdem erschwert es die
-                            Lesbarkeit deutlich, da man die Stylevorgaben nicht zentral an einem Platz hat.
-                            Die nächste Möglichkeit ist, den <span class="code">&ltstyle></span>
-                            ...
-                            <span class="code">&lt/style></span> Tag im Header der HTML-Datei zu benutzen dies
-                            vereinfacht die Lesbarkeit zwar
-                            extrem, jedoch muss man den Tag trotzdem für jede Datei, welche auf diese Art gestyled
-                            werden soll, anlegen. Somit eignet sich diese Methode für Websites mit mehreren
-                            HTML-Dokumenten ebenfalls nicht.
-                            Vorzugsweise nutzt man also diese Methode: Das Einbinden eines Stylesheets im HTML-Header.
-                            Dies erlaubt es nicht nur, dasselbe Sheet für verschiedene Dokumente zu nutzen, man kann
-                            sogar verschiedene Stylesheets für verschiedene Endgeräte nutzen. Hierfür nutzt man das
-                            Standalone Tag
-                            <span class="code">&ltlink /></span>. In diesem Tag setzt man mit dem Attribut rel=““ die
-                            Beziehung, man schreibt also
-                            <span class="code">rel=“stylesheet“</span>. Zusätzlich benötigt wird auch der href=““-Tag,
-                            dem man den Link des
-                            gewünschten Stylesheets übergibt, beispielsweise <span
-                                class="code">href=“/stylesheet.css“</span>. Neben diesen beiden
-                            Pflicht-Attributen gibt es noch das media=““ und das title=““-Attribut. Mit dem
-                            media=““-Attribut lassen sich verschieden Styles für verschiedene Endgeräte festlegen:
-                            <br>
-                            <span class="code">&ltlink rel="stylesheet" href="smartphone.css" media=“handheld“ /></span>
-                            <br>
-                            <span class="code">&ltlink rel="stylesheet" href="desktop.css" media=“screen“ /></span>
-                            <br>
-                            Verschiedene media=““-Werte sind zum Beispiel screen (Standartwert, für normale
-                            Computerbildschirme), handheld (für PDAs und Smartphones) oder print (für die Druckversion
-                            der Seite). Das title=““-Attribut erlaubt es, verschiedene Styles für die gleiche Seite auf
-                            dem gleichen Medium anzulegen. Die so definierten Styles lassen sich im Browser wechseln,
-                            auf Firefox beispielsweise mit einem Klick auf Ansicht > Webseiten-Stil.
-                        </p>
-                    </div>
-
-                    <div class="center-paragraph">
-                        <h4 id="farben" class="hider"><i class="pfeil-d"></i>1.6 Farben</h4>
-                        <div>
-                            <p>
-                                Mittels CSS lassen sich HTML-Elemente einfärben. Die gewünschte Farbe kann man auf
-                                verschiedenen Wegen definieren. Der einfachste Weg sind Namen. Für viele vordefinierte
-                                Farben wurden Namen vergeben, die man einfach und ohne Anführungszeichen angeben kann.
-                                Beispiele hierfür sind „simple“ Farben wie „Red“, „Blue“ oder „Green“, es gibt aber auch
-                                „verstecktere“ Farbnamen wie „GoldenRod“, oder „DarkSeaGreen“, vgl [BB16, S.102].
-                                Zusätzlich zu den Namen kann man unter anderem auch noch Hex-Farben, RGB-Farben und
-                                HSL-Farben angeben. Anschließend folgt eine Tabelle, welche oben benannte Werte in den
-                                verschiedenen Schreibweisen vergleicht.
-                            </p>
-                            <table id="tab1-1">
-                                <caption>Tab. 1.1: Vergleicher verschiedener Farben und Schreibweisen</caption>
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Hex-Wert</th>
-                                        <th>RGB-Wert</th>
-                                        <th class="hide">HSL-Wert</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr id="red">
-                                        <td>Red</td>
-                                        <td>#ff0000</td>
-                                        <td>rgb(255,0,0)</td>
-                                        <td class="hide">hsl(0, 100%, 50%)</td>
-                                    </tr>
-                                    <tr id="blue">
-                                        <td>Blue</td>
-                                        <td>#0000ff</td>
-                                        <td>rgb(0,0,255)</td>
-                                        <td class="hide">hsl(240, 100%, 50%)</td>
-                                    </tr>
-                                    <tr id="green">
-                                        <td>Green</td>
-                                        <td>#00ff00</td>
-                                        <td>rgb(0,255,0)</td>
-                                        <td class="hide">hsl(120, 100%, 50%)</td>
-                                    </tr>
-                                    <tr id="goldenrod">
-                                        <td>GoldenRod</td>
-                                        <td>#DAA520</td>
-                                        <td>rgb(218,165,32)</td>
-                                        <td class="hide">hsl(43, 74%, 49%)</td>
-                                    </tr>
-                                    <tr id="darkseagreen">
-                                        <td>DarkSeaGreen</td>
-                                        <td>#8fbc8f</td>
-                                        <td>rgb(143,188,143)</td>
-                                        <td class="hide">hsl(120, 25%, 65%)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <p>Grundsätzlich kann man die Farbnamen auch alle klein schreiben. </p>
-                        </div>
-                    </div>
-
-                    <div class="center-paragraph">
-                        <h4 id="massangaben" class="hider"><i class="pfeil-d"></i>1.7 Maßangaben</h4>
-                        <div>
-                            <p>
-                                Wie oben schon erwähnt, gibt es in CSS Maßangaben, um Abstände, Größen und Ähnliches
-                                festzulegen. In CSS wird unterschieden zwischen <strong>relativen</strong> Längen und
-                                <strong>absoluten</strong> Längen.
-                            </p>
-                            <table>
-                                <caption>Tab. 1.2: Relative Längeneinheiten</caption>
-                                <thead>
-                                    <tr>
-                                        <th>Einheit</th>
-                                        <th>Beschreibung</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>em</td>
-                                        <td>Abhängig von der Höhe der gewählten Schriftart. Orientiert sich am großen
-                                            „M“</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ex</td>
-                                        <td>Abhängig von der Höhe der gewählten Schriftart. Orientiert sich am kleinen
-                                            „x“</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ch</td>
-                                        <td>Abhängig von der Breite der Null „0“</td>
-                                    </tr>
-                                    <tr>
-                                        <td>vw</td>
-                                        <td>1% von der Breite des Browser Fensters</td>
-                                    </tr>
-                                    <tr>
-                                        <td>vh</td>
-                                        <td>1% von der Höhe des Browser Fensters</td>
-                                    </tr>
-                                    <tr>
-                                        <td>vmin</td>
-                                        <td>1% von der kleineren Größe des Fensters</td>
-                                    </tr>
-                                    <tr>
-                                        <td>vmax</td>
-                                        <td>1% von der größeren Größe des Fensters</td>
-                                    </tr>
-                                    <tr>
-                                        <td>%</td>
-                                        <td>Angabe in Prozent des Übergeordneten Elements</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <p>„Relative Maßeinheiten eignen sich für die Bildschirmdarstellung besser als absolute
-                                Einheiten, da sie skalierbar sind“ [HB11, S86]. Eine Ausnahme bildet die px-Einheit,
-                                diese bietet sich gut am, um dünne Grenzlinien zu definieren. Wenn die Größe des
-                                Ausgabemediums bekannt ist, bieten sich absolute Längeneinheiten an, da sich die
-                                Abstände so genauer festlegen lassen. Wenn man beispielsweise ein Stylesheet für eine
-                                Druckversion einer Seite anlegt, weiß man, wie groß das Papier ist und kann hervorragend
-                                absolute Einheiten nutzen. </p>
-                            <table>
-                                <caption>Tab. 1.3: Absolute Längeneinheiten</caption>
-                                <thead>
-                                    <tr>
-                                        <th>Einheit</th>
-                                        <th>Beschreibung</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>cm</td>
-                                        <td>Abhängig von der Höhe der gewählten Schriftart. Orientiert sich am großen
-                                            „M“</td>
-                                    </tr>
-                                    <tr>
-                                        <td>mm</td>
-                                        <td>Abhängig von der Höhe der gewählten Schriftart. Orientiert sich am kleinen
-                                            „x“</td>
-                                    </tr>
-                                    <tr>
-                                        <td>in</td>
-                                        <td>Inch</td>
-                                    </tr>
-                                    <tr>
-                                        <td>px</td>
-                                        <td>Pixel, abhängig vom Gerät. Low-DPI: 1px ist ein Pixel des Displays. Drucker
-                                            und hochauflösende Bildschirme: 1px sind mehrere Display Pixel</td>
-                                    </tr>
-                                    <tr>
-                                        <td>pt</td>
-                                        <td>Point</td>
-                                    </tr>
-                                    <tr>
-                                        <td>pc</td>
-                                        <td>Pica</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
                     </div>
 
                     <div class="center-paragraph">
                         <h4 id="zusammenfassung-1" class="hider"><i class="pfeil-d"></i>Zusammenfassung</h4>
                         <p>
-                            In diesem Kapitel wurde erklärt, was CSS ist und warum man es benutzen sollte. Außerdem
-                            wurde beschrieben, wie man sein HTML-Dokument auf Styling mittels CSS vorbereiten kann und
-                            wie man CSS in sein Dokument einbindet.<br>
-                            Abschließend wurden noch grundlegende Einheiten von CSS definiert und erklärt, wann und wie
-                            sie zu benutzen sind.
+                            In diesem Kapitel wurde zunächst der Begriff JavaScript erklärt und die Bedeutung der Sprache beschrieben. 
+Anschließend wurde in einem kurzen historischen Abriss die Entwicklung dargestellt und wichtige Ereignisse, wie das Erstellen verschiedener Standards, aufgezeigt.
+Abschließend wurden die wichtigsten Merkmale und Eigenschaften kurz beschrieben und erklärt, wobei im Laufe des Skriptes an den jeweiligen Stellen weiterführend auf die Technologien und Funktionsweisen eingegangen wird.
+
                         </p>
                     </div>
 
                     <div class="center-paragraph">
                         <h4 id="uebungen-1" class="hider"><i class="pfeil-d"></i>Übungen</h4>
                         <p class="uebung">
-                            Aufgabe 1<br>
-                            Was ist CSS?
+                            Aufgabe 1.1<br>
+                            Was sind die Einsatzgebiete von JavaScript und wofür wird es hauptsächlich verwendet?
                         </p>
                         <p class="uebung">
-                            Aufgabe 2<br>
-                            Was versteht man unter responsivem Webdesign?
-                        </p>
-
-                        <p class="uebung">
-                            Aufgabe 3<br>
-                            Was macht die Kaskadierung in CSS so nützlich?
+                            Aufgabe 1.2<br>
+                            Was ist das ECMAScript und was legt es fest?
                         </p>
 
                         <p class="uebung">
-                            Aufgabe 4<br>
-                            Weshalb sollte man auf inline-style verzichten?
-                        </p>
-
-                        <p class="uebung">
-                            Aufgabe 5<br>
-                            Binden Sie das Stylesheet „/handheld.css“ ein, sodass es nur auf Smartphones/PDAs benutzt
-                            wird.
+                            Aufgabe 1.3<br>
+                            Nennen sie eine beispielhafte JavaScript Anweisung zur Zuweisung einer Variablen.
                         </p>
                     </div>
 
@@ -1244,115 +995,111 @@
                         <h4 id="loesungen" class="hider"><i class="pfeil-d"></i>A Lösungen</h4>
                         <p>
                             1.1<br>
-                            CSS, also Cascading Style Sheets, ist eine Designsprache, die es ermöglicht, Webseiten bis
-                            ins kleinste Detail abzustimmen.<br><br>
+                            Das Einsatzgebiet der JavaScript Programmierung ist in erster Linie die webbezogene Programmierung, wobei diese meist clientseitig implementiert ist.<br><br>
                             1.2<br>
-                            Unter responsivem Webdesign versteht man die Erstellung von Websites, die auf allen
-                            Endgeräten, unabhängig von Größe oder Auflösung des Bildschirms und Eingabemöglichkeiten,
-                            gut zu lesen und zu nutzen sind.<br><br>
+                            Das ECMAScript standardisiert ein JavaScript System, um verschiedene Implementationen einheitlich zu halten. Es legt unter anderem die Sprachelemente und Sicherheitsprinzipien fest. Die bekannteste Implementierung ist JavaScript.<br><br>
                             1.3<br>
-                            Die Kaskadierung in CSS erlaubt es, ein generelles Design für Gruppen von Elementen zu
-                            entwerfen und trotzdem noch in der Lage zu sein, Untergruppen oder einzelne Elemente anders
-                            zu gestalten. Dies spart viel Arbeit.<br><br>
-                            1.4<br>
-                            Nutzt man den inline-style direkt im HTML-Dokument, geht die Übersichtlichkeit des Codes
-                            verloren. Außerdem verliert man die Vorteile der Kaskadierung und muss, wenn man den Style
-                            von verschiedenen Elementen ändern will, bei jedem Element den inline-style umschreiben
-                            anstatt es ein mal zentral machen zu können.<br><br>
-                            1.5<br>
-                            <span class="code">&ltlink href=“/handheld.css“ media=“handheld“ rel=“stylesheet“
-                                /></span><br>
+                            var beispielZahl = 5;<br><br>
                             2.1<br>
-                            Regel (Selektor { Deklaration( Eigenschaft: Wert;) })<br><br>
+                            JavaScript kann direkt in den HTML-Code in ein script Tag geschrieben werden, aus einer externen Datei eingebunden werden,  in einen Link eingebaut werden oder in einem Event-Handler hinterlegt werden.<br><br>
                             2.2<br>
-                            <span class="code">#first { background: yellow; }</span><br><br>
+                            Zum Einbinden in den HTML-Code muss der JavaScript-Code zwischen den Tags script und /script stehen.<br>
                             2.3<br>
-                            nav > a<br><br>
+                            Um ein externes Skript einzubinden, muss dieses im script Tag mit href=“name.js“ referenziert werden.<br><br>
                             2.4<br>
-                            Alle Zitate, deren Sprache mittels lang=“de“ auf deutsch gesetzt wurde.<br><br>
+                            Es wird das Protokoll javascript: benötigt, hierauf folgen die Anweisungen als JavaScript-Code.<br><br>
                             2.5<br>
-                            <span class="code">*[class|=“big“]</span><br><br>
+                            Um auf das Benutzerverhalten einzugehen, werden in JavaScript EventHandler benutzt. Der hinterlegte Code wird dann ausgeführt, sobald das jeweilige Ereignis eintrifft.<br><br>
                             3.1<br>
-                            Eine Box besteht aus dem Außenabstand (margin), dem Rahmen (border), dem Innenabstand
-                            (padding) und dem Inhalt(content).<br><br>
+                            In JavaScript kann man eine Variable mit den Schlüsselworten var, let und const (Konstante) deklarieren. <br><br>
                             3.2<br>
-                            10px + 2px + 5px + 50px + 5px + 2px + 10px = 84px<br><br>
+                            Variablen in JavaScript sind dynamisch typisiert, das heißt eine Variable hat den Datentypen des Wertes, der ihr zugewiesen wird, und zwar erst nach der Wertezuweisung. Somit kann sich der Datentyp bei Veränderung der Variablen mit der Zeit ändern.<br><br>
                             3.3<br>
-                            Man nutzt entweder overflow: hidden; oder overflow: scroll;.<br><br>
+                            In JavaScript gibt es den lokalen und den globalen Scope. Jede Funktion erschafft einen lokalen Scope. Falls eine Variable in einer Funktion deklariert wird, ist sie nur in deren lokalen Scope. Alle anderen Variablen haben den globalen Scope, es kann von überall aus auf sie zugegriffen werden.<br><br>
+                            3.4<br>
+                            Unter dem Begriff Hoisting versteht man in JavaScript die Eigenschaft des Interpreters, alle Variablendeklarationen an den Anfang des jeweiligen Sichtbarkeitsbereichs zu verschieben.<br><br>
+                            3.5<br>
+                            Die Truthiness legt fest, welche Werte zu welchen Wahrheitswerten von JavaScript ausgewertet werden.<br><br>
+                            3.6<br>
+                            In JavaScript werden alle Werte, wenn nötigt, implizit zu den benötigten Datentypen konvertiert, wobei dies immer zum größeren Typ hin erfolgt. Man kann Datentypen jedoch auch manuell konvertieren. <br><br>
                             4.1<br>
-                            Es gibt Schriftarten mit Serifen und es gibt Schriftarten ohne Serifen.<br><br>
+                            In JavaScript gibt es die if-Anweisung mit den besonderen Ausprägungen if/else und if/else if. Außerdem gibt es die switch Anweisung. <br><br>
                             4.2<br>
-                            Eine serifenlose Schriftart.<br><br>
-                            4.3<br>
-                            <span class="code">p { font-family: Arial; font-weight: bold;}</span><br><br>
-                            4.4<br>
-                            Man sollte zusätzlich noch die Hintergrundfarbe ändern.<br><br>
-                            4.5<br>
-                            <span class="code">#unterstrichen{text-decoration: underline red;}</span><br><br>
-                            4.6<br>
-                            <span class="code">#angepasst {text-align: justify;}</span><br><br>
+                            In JavaScript gibt es while, do…while, for, for…in und for…of Schleifen.<br><br>
                             5.1<br>
-                            Man nutzt die Deklaration position: fixed; und legt mit left, right, top oder bottom die
-                            Position fest.<br><br>
+                            var autos = [“BMW“, “Mercedes“];<br><br>
                             5.2<br>
-                            Es könnte passieren, dass ein Element ein anderes verdeckt.<br><br>
-                            5.3<br>
-                            Man nutzt position: absolute; und platziert das Bild mit left, right, top, oder bottom an
-                            die richtige Position. Zusätzlich nutzt man z-index: -1; um dafür zu sorgen, dass das Bild
-                            im Hintergrund ist.<br><br>
-                            5.4<br>
-                            Man nutzt float: left oder float: right, je nachdem, auf welcher Seite sich das Bild
-                            befinden soll.<br><br>
-                            5.5<br>
-                            Man wendet einen Clearfix an.<br><br>
+                            Mit der Methode length.<br><br>
+                            6.1<br>
+                            Eine Funktion beginnt mit dem Schlüsselwort function, gefolgt von dem Namen der Funktion, Klammern, in denen optional Parameter festgelegt werden können und zuletzt geschweifte Klammern, in denen der auszuführende Code steht. <br><br>
+                            6.2<br>
+                            In JavaScript kann man unter anderem Funktionen innerhalb von Funktionen deklarieren. Weiterhin gibt es die Möglichkeit, anonyme Funktionen zu schreiben.<br><br>
+                            6.3<br>
+                            Methoden sind in JavaScript Funktionen, die an ein Objekt gebunden sind.<br><br>
+                            7.1<br>
+                            Das Ziel des Debuggings ist das Finden von Fehlern im Quellcode, um diese zu beheben.<br><br>
+                            7.2<br>
+                            In der Debug-Konsole von FireFox ist es möglich, Haltepunkte zu setzen, an denen das Programm angehalten wird. An diesen werden dann alle aktuellen Variablen und Werte angezeigt. Außerdem gibt es die Möglichkeit, sich die Aufrufliste aller Funktionen anzeigen zu lassen. <br><br>
+                            8.1<br>
+                            Das Document Object Model besteht aus allen Objekten der HTML-Seite, die es repräsentiert. Diese sind in einer Baumstruktur aufgebaut.<br><br>
+                            8.2<br>
+                            Mit getElementById(…).<br><br>
+                            8.3<br>
+                            Mit getElementById(…).<br><br>
+                            9.1<br>
+                            JavaScript ist in der Lage, eigenständig mit dem Webserver zu kommunizieren. Das bedeutet, man kann mit JavaScript Webseiten dynamisch aufbauen und modifizieren. Dies passiert asynchron zum Browser. Er wird nicht blockiert, sondern JavaScript verändert das DOM der Seite einfach, sobald die gewünschten Ergebnisse vom Server vorliegen. <br><br>
+                            9.2<br>
+                            Um Requests an den Webserver zu senden, erstellt man ein neues Objekt des Typs XMLHttpRequest. An diesem wird mit open die Anfrage spezifiziert und mit send abgeschickt. <br><br>
+                            10.1<br>
+                            Die Grundidee hinter JQuery ist es, dem JavaScript-Entwickler einen einfacheren Umgang mit dem DOM zu ermöglichen, um es kompakt und übersichtlich modifizieren und so Webseiten einfach dynamisch verändern und erweitern zu können.<br><br>
+                            10.2<br>
+                            Man kann mit der Funktion $ einfach an alle Elemente im DOM gelangen, diese dann mit attr in ihren Eigenschaften verändern und auf Benutzerverhalten leicht reagieren. <br><br>
                         </p>
                     </div>
 
                     <div class="center-paragraph">
                         <h4 id="literatur" class="hider"><i class="pfeil-d"></i>B Literaturverzeichnis</h4>
                         <p>
-                            Andy Budd, Emil Björklund: CSS Mastery; Apress Verlag; 2016; DOI
-                            https://doi.org/10.1007/978-1-4302-5864-3<br><br>
-                            Norbert Hammer, Karen Bensmann: Webdesign für Studium und Beruf; Springer Verlag; 2011; ISBN
-                            978-3-642-17069-0<br><br>
-                            Christoph Zillgens: Responsive Webdesign; Carl Hanser Verlag; 2012; ISBN 978-3-446-43015-0
+                            [SK09] Stefan Koch: JavaScript: Einführung, Programmierung und Referenz – inklusive Ajax; dpunkt.verlag; 2009; ISBN 978-89864-594-2<br><br>
+                            [SS11] Steve Suehring: JavaScript – Schritt für Schritt; Microsoft Press Deutschland; 2011; ISBN 978-3-86645-551-1<br><br>
+                            [MH12] Marijn Haverbeke: Die Kunst der JavaScript – Programmierung; dpunkt.verlag; 2012; ISBN 978-3-89864-787-8<br><br>
+                            [CW10] Christian Wenz: JavaScript und AJAX; Rheinwerk Computing; 7. Auflage 2010; ISBN 3-89842-859-1
                         </p>
                     </div>
 
                     <div class="center-paragraph">
                         <h4 id="abbildungen" class="hider"><i class="pfeil-d"></i>C Abbildungsverzeichnis</h4>
                         <p>
-                            Abb. 1.1: Responsives Webdesign<br>
-                            Abb. 1.2: Der weiter unten definierte Wert wird angenommen<br>
-                            Abb. 2.1: Eine simple CSS Regel<br>
-                            Abb. 2.2: HTML-Code für die folgenden Beispiele<br>
-                            Abb. 2.3: Der Nachfahren-Kombinator<br>
-                            Abb. 2.4: Der Kind-Kombinator<br>
-                            Abb. 2.5: Der Nachbar-Kombinator<br>
-                            Abb. 2.6: Der Geschwister-Kombinator<br>
-                            Abb. 3.1: Das Box-Modell<br>
-                            Abb. 3.2: Weitere Rahmenstile<br>
-                            Abb. 4.1: Veranschaulichung von Serifen<br>
-                            Abb. 4.2: text-align: justify;<br>
-                            Abb. 5.1: position: relative; top: 2px; left: 10px;<br>
-                            Abb. 5.2: links: grün hat z-index: -1, rechts: grün hat z-index: 1<br>
-                            Abb. 5.3: Der blaue Block wurde mittels float: left platziert<br>
-                            Abb. 5.4: Das gleiche Beispiel ohne float<br>
-                            Abb. 5.5: Der blaue Block wurde mittels float: right platziert<br>
-                            Abb. 5.6: Der Textabschnitt wird mittels clear: right von schwebenden Elementen
-                            freigehalten<br>
-                            Abb. 5.7: Beispiel ohne Clearfix<br>
-                            Abb. 5.8: Beispiel mit Clearfix<br>
-                            Abb. 5.9: Die Clearfix Regel<br>
+                            Abb. 1.1:	Die Bausteine HTML, CSS und JavaScript<br>
+                            Abb. 7.1:	Die Toolbox in FireFox<br>
+                            Abb. 9.1:	Erzeugte Seite zum Ajax-Beispiel<br>
                         </p>
                     </div>
 
                     <div class="center-paragraph">
-                        <h4 id="tabellen" class="hider"><i class="pfeil-d"></i>D Tabellenverzeichnis</h4>
+                        <h4 id="codes" class="hider"><i class="pfeil-d"></i>D Codebeispielverzeichnis</h4>
                         <p>
-                            Tab. 1.1: Vergleich verschiedener Farben und ihrer Schreibweisen<br>
-                            Tab. 1.2: Relative Längeneinheiten<br>
-                            Tab. 1.3: Absolute Längeneinheiten<br>
+                            Codebsp. 1.1:	Einfache JavaScript-Zuweisung<br>
+                            Codebsp. 2.1:	JavaScript im script Tag<br>
+                            Codebsp. 2.2:	Erste externe JavaScript-Datei „beispiel2.js“<br>
+                            Codebsp. 2.3:	Einbinden der externen JavaScript-Datei<br>
+                            Codebsp. 2.4:	Verwendung eines JavaScript-Links<br>
+                            Codebsp. 2.5:	Button mit JavaScript Event-Handler<br>
+                            Codebsp. 3.1:	Variablenerzeugung mit Literalen<br>
+                            Codebsp. 3.2:	Variablenerzeugung mit Instanzen<br>
+                            Codebsp. 3.3:	Variablen mit globalen und lokalen Scopes<br> 
+                            Codebsp. 3.4:	Beispiel zum Hoisting<br>
+                            Codebsp. 3.5:	Explizite Typumwandlungen<br>
+                            Codebsp. 4.1:	if-Verzweigung<br>
+                            Codebsp. 4.2:	case-Anweisung<br>
+                            Codebsp. 4.3:	do...while-Schleife<br>
+                            Codebsp. 4.4: 	for-Schleife<br>
+                            Codebsp. 4.5:	for…of-Schleife<br>
+                            Codebsp. 5.1:	Ein Array in JavaScript<br>
+                            Codebsp. 6.1:	Beispielfunktion<br>
+                            Codebsp. 8.1:	Zugriff auf den DOM-Baum<br>
+                            Codebsp. 9.1:	HTML-Code zum Ajax-Beispiel<br>
+                            Codebsp. 9.2:	JavaScript-Code zum Ajax-Beispiel
                         </p>
                     </div>
                 </div>
