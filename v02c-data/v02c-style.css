@@ -5,179 +5,16 @@
         max-width: 300px;
     }
 
-    #abb1-2 {
-        width: 30%;
-        max-width: 150px;
-        float: left;
-    }
-
-    #abb2-1 {
-        width: 80%;
-        max-width: 300px;
-        margin: auto;
-    }
-
-    #abb2-2 {
-        width: 30%;
-        margin: auto;
-    }
-
-    #abb2-3 {
-        width: 40%;
-        max-width: 200px;
-        position: relative;
-        left: 0%;
-        bottom: 20%;
-    }
-
-    #abb2-4 {
-        width: 40%;
-        max-width: 200px;
-        position: absolute;
-        right: 0;
-        bottom: 20%;
-    }
-
-    #abb2-5 {
-        width: 40%;
-        max-width: 200px;
-        position: relative;
-        left: 0%;
-        bottom: 0;
-    }
-
-    #abb2-6 {
-        
-        width: 40%;
-        max-width: 200px;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
-
-    #abb3-1 {
-        width: 40%;
-        float: right;
-        text-align: center;
-    }
-    
-    #abb3-2 {
-        width: 80%;
-        max-width: 400px;
-        margin: auto;
-    }
-
-
-    #abb4-1 {
+    #a7-1 {
+        float: none;
         width: 70%;
-        max-width: 400px;
-        margin: auto;
+        max-width: 700px;
     }
 
-    #abb4-2 {
-        width: 40%;
-        max-width: 200px;
-        float: right;
-    }
-
-    #abb5-1 {
-        float: right;
-        width: 50%;
-    }
-
-    #abb5-2 {
-        width: 80%;
-        max-width: 300px;
-        margin: auto;
-    }
-
-    #abb5-3 {
-        width: 50%;
-        max-width: 300px;
-        margin: auto;
-    }
-
-    #abb5-4 {
-        width: 50%;
-        max-width: 300px;
-        margin: auto;
-    }
-
-    #abb5-5 {
-        z-index: -1;
-        width: 45%;
-        max-width: 300px;
-        position: relative;
-        left: -5%;
-    }
-
-    #abb5-6 {
-        z-index: -1;
-        width: 45%;
-        max-width: 300px;
-        position: absolute;
-        top: -40%;
-        right: -5%;
-    }
-
-    #abb5-7 {
-        z-index: -1;
-        width: 45%;
-        max-width: 300px;
-        position: relative;
-        left: -5%;
-    }
-
-    #abb5-8 {
-        z-index: -1;
-        width: 45%;
-        max-width: 300px;
-        position: absolute;
-        top: -25%;
-        right: -5%;
-    }
-
-    #abb5-9 {
-        width: 40%;
-        max-width: 300px;
-        position: relative;
-        left: 20%;
-    }
-
-    #tab1-1 {
+    #a9-1 {
+        float: none;
         width: 100%;
-    }
-
-    #tab1-1 #red {
-        background-color: red;
-        color: white;
-    }
-
-    #tab1-1 #blue {
-        background-color: blue;
-        color: white;
-    }
-
-    #tab1-1 #green {
-        background-color: green;
-        color: white;
-    }
-
-    #tab1-1 #goldenrod {
-        background-color: goldenrod;
-        color: white;
-    }
-
-    #tab1-1 #darkseagreen {
-        background-color: darkseagreen;
-        color: white;
-    }
-
-
-    #tab1-1, #tab1-1 tr, #tab1-1 td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        padding: 1ex;
+        max-width: 1000px;
     }
     
     .clearfix::after {
@@ -197,26 +34,17 @@
             width: 100%;
         }
 
-        #tab1-1 .hide {
-            display: none;
-        } 
-
-        #abb2-3 {
+        #a1-1 {
             position: static;
             float: none;
         }
         
-        #abb2-4 {
+        #a7-1 {
             position: static;
             float: none;
         }
 
-        #abb2-5 {
-            position: static;
-            float: none;
-        }
-
-        #abb2-6 {
+        #a9-1 {
             position: static;
             float: none;
         }
