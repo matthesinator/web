@@ -125,27 +125,6 @@ h3 {
     margin-right: 1%;
 }
 
-.start-logo {
-    float: left;
-    max-width: 100%;
-    height: auto;
-    margin-right: 1%;
-}
-
-.thema {
-    font-size: 1.2em;
-}
-
-.thema::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
-.thema-h3 {
-    text-align: center;
-}
-
 .content-center .author {
     font-size: 0.8em;
     text-align: right;
