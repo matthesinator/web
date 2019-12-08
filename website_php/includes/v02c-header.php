@@ -21,11 +21,11 @@
 
         <nav>
             <ul class="navigation">
-                <li><a id="activetab" href="mainpage.php">Start</a></li>
+                <li><a href="mainpage.php">Start</a></li>
                 <li><a href="v01-client-server.php">Server & Client</a></li>
                 <li><a href="v02a-html.php">HTML</a></li>
                 <li><a href="v02b-css.php">CSS</a></li>
-                <li><a href="v02c-javascript.php">JavaScript</a></li>
+                <li><a id="activetab"href="v02c-javascript.php">JavaScript</a></li>
                 <li><a href="v03a.php">JSP's/Servlets/JaxB </a></li>
                 <li><a href="v03b.php">PHP</a></li>
                 <li><a href="v03c.php">NodeJS</a></li>

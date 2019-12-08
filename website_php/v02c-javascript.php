@@ -201,7 +201,7 @@
                                 Da JavaScript in HTML integriert wird, arbeitet man hauptsächlich mit HTML-Dateien.
                                 JavaScript-Anweisungen können hierbei an mehreren Stellen untergebracht und eingebunden
                                 werden. Eine Möglichkeit ist das direkte Codieren in den HTML-Code zwischen den Tags
-                                <script> und </script>. Alternativ kann der JavaScript-Code auch in einer externen Datei
+                                &lt;script&gt; und &lt;script&gt;. Alternativ kann der JavaScript-Code auch in einer externen Datei
                                 gespeichert werden, welche später im HTML-Dokument eingebunden wird. Weiterhin können in
                                 den HTML-Code JavaScript-Links eingebaut werden, welche mit Code hinterlegt sind. Es
                                 gibt zudem Attribute, welche als Event-Handler fungieren können, die also auf bestimmte
