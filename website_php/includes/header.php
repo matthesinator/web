@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 
@@ -21,14 +22,14 @@
 
         <nav>
             <ul class="navigation">
-                <li><a id="activetab" href="mainpage.php">Start</a></li>
-                <li><a href="v01-client-server.php">Server & Client</a></li>
-                <li><a href="v02a-html.php">HTML</a></li>
-                <li><a href="v02b-css.php">CSS</a></li>
-                <li><a href="v02c-javascript.php">JavaScript</a></li>
-                <li><a href="v03a.php">JSP's/Servlets/JaxB </a></li>
-                <li><a href="v03b.php">PHP</a></li>
-                <li><a href="v03c.php">NodeJS</a></li>
+                <li><a <?php if($topic == 'main') { echo 'id="activetab"';} ?>href="mainpage.php">Start</a></li>
+                <li><a <?php if($topic == 'cs') { echo 'id="activetab"';} ?>href="v01-client-server.php">Server & Client</a></li>
+                <li><a <?php if($topic == 'html') { echo 'id="activetab"';} ?>href="v02a-html.php">HTML</a></li>
+                <li><a <?php if($topic == 'css') { echo 'id="activetab"';} ?>href="v02b-css.php">CSS</a></li>
+                <li><a <?php if($topic == 'js') { echo 'id="activetab"';} ?>href="v02c-javascript.php">JavaScript</a></li>
+                <li><a <?php if($topic == 'jsp') { echo 'id="activetab"';} ?>href="v03a.php">JSP's/Servlets/JaxB </a></li>
+                <li><a <?php if($topic == 'php') { echo 'id="activetab"';} ?>href="v03b.php">PHP</a></li>
+                <li><a <?php if($topic == 'node') { echo 'id="activetab"';} ?>href="v03c.php">NodeJS</a></li>
             </ul>
         </nav>
 

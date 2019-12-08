@@ -1,5 +1,6 @@
 <?php
-    include('includes/v02c-header.php');
+    $topic = 'js';
+    include('includes/header.php');
 ?>
 
 <h1>Die Sprache JavaScript im Detail</h1>

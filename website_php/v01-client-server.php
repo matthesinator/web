@@ -1,5 +1,6 @@
 <?php
-    include('includes/sc-header.php');
+    $topic = 'cs';
+    include('includes/header.php');
 ?>
 
 <h1>Client-Server-Kommunikation im Detail</h1>

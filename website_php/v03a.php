@@ -1,4 +1,5 @@
 <?php
+    $topic = 'jsp';
     include('includes/header.php');
 ?>
 

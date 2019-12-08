@@ -1,5 +1,6 @@
 <?php
-    include('includes/v02b-header.php');
+    $topic = 'css';
+    include('includes/header.php');
 ?>
 
 <h1>Die Sprache CSS3 im Detail</h1>

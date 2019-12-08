@@ -1,5 +1,6 @@
 <?php
-    include('includes/v02a-header.php');
+    $topic = 'html';
+    include('includes/header.php');
 ?>
 
 <h1>Die Sprache HTML im Detail</h1>

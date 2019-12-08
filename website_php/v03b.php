@@ -1,4 +1,5 @@
 <?php
+    $topic = 'php';
     include('includes/header.php');
 ?>
 

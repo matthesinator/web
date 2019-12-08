@@ -1,4 +1,5 @@
 <?php
+    $topic = 'node';
     include('includes/header.php');
 ?>
 
