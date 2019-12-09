@@ -6,7 +6,11 @@
     <title>WEB</title>
     <meta charset="UTF-8">
     <link href="stylesheet.css" rel="stylesheet" />
-    <link href="mainpage-style.css" rel="stylesheet" />
+    <link <?php if ($topic == 'main') {echo 'href="index-style.css"';}
+                else if ($topic == 'cs') {echo 'href="v01-data/v01-style.css"';}
+                else if($topic == 'html') {echo 'href="v02a-data/v02a-style.css"';}
+                else if($topic == 'css') {echo 'href="v02b-data/v02b-style.css"';}
+                else if($topic == 'js') { echo 'href="v02c-data/v02c-style.css"';} ?> rel="stylesheet" />
     <link rel="icon" type="image/png" href="hsmalogo.png" />
 </head>
 
@@ -22,7 +26,7 @@
 
         <nav>
             <ul class="navigation">
-                <li><a <?php if($topic == 'main') { echo 'id="activetab"';} ?>href="mainpage.php">Start</a></li>
+                <li><a <?php if($topic == 'main') { echo 'id="activetab"';} ?>href="index.php">Start</a></li>
                 <li><a <?php if($topic == 'cs') { echo 'id="activetab"';} ?>href="v01-client-server.php">Server & Client</a></li>
                 <li><a <?php if($topic == 'html') { echo 'id="activetab"';} ?>href="v02a-html.php">HTML</a></li>
                 <li><a <?php if($topic == 'css') { echo 'id="activetab"';} ?>href="v02b-css.php">CSS</a></li>
@@ -34,8 +38,7 @@
         </nav>
 
         <div class="content-container">
-            <div class="content-left"></div>
-            <div class="content-center">
+
 
 
             
