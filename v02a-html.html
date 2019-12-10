@@ -23,9 +23,10 @@
             <ul class="navigation">
                 <li><a href="mainpage.html">Start</a></li>
                 <li><a href="v01-client-server.html">Server & Client</a></li>
-                <li><a id="activetab" href="#">HTML</a></li>
+                <li><a id="activetab" href="v02a-html.html">HTML</a></li>
                 <li><a href="v02b-css.html">CSS</a></li>
-                <li><a href="v02c-javascript.html">JavaScript</a></li>
+                <li><a href="v02c-javascript.html">JavaScript 1</a></li>
+                <li><a href="v02c-javascript-mb.html">JavaScript 2</a></li>
                 <li><a href="v03a.html">JSP's/Servlets/JaxB</a></li>
                 <li><a href="v03b.html">PHP</a></li>
                 <li><a href="v03c.html">NodeJS</a></li>
@@ -373,7 +374,8 @@
                                 <div>
                                     <p>
                                         Über das <i class="code">img</i>-Element ist es möglich, Bilder oder animierte GIF-Dateien in eine Website einzubinden.<br><br> Dieses Element wird als Standalone-Tag realisiert und wird lediglich über seine Attribute
-                                        definiert.<br> <br> Die Angabe des <i class="code">src</i>- und des <i class="code">alt</i>-Attributs sind hierbei notwendig, um das Bild darstellen zu können. <br> <br> Das <i class="code">alt</i>-Attribut (<i>alternative</i>)
+                                        definiert.
+                                        <br> <br> Die Angabe des <i class="code">src</i>- und des <i class="code">alt</i>-Attributs sind hierbei notwendig, um das Bild darstellen zu können. <br> <br> Das <i class="code">alt</i>-Attribut (<i>alternative</i>)
                                         bekommt als Wert einen Text übergeben, welcher angezeigt werden wird, falls das Bild nicht korrekt geladen werden konnte. <br> <br> Über das <i class="code">src</i>-Attribut (<i>source</i>) muss die Quelle des Bildes
                                         definiert werden. Dabei wird dem Attribut entweder eine URL oder eine relative Pfadangabe zum Ablageort des HTML-Dokuments zugewiesen. Befindet sich das Bild in demselben Ordner wie die HTML-Datei in die es eingebunden
                                         wird, so kann dem Attribut als Wert einfach der Name des Bildes als Wert zugewiesen werden <br> <br> Hier als kleines Beispiel eine relative Pfadangabe und eine URL, als Wert des src-Attributes: <br>
@@ -428,17 +430,16 @@
                                     <p>
                                         Mittels des <i class="ilcode">target</i>-Attributs wird festgelegt, wie genau das referenzierte Dokument geöffnet wird. <br> <br> Der Wert <i class="ilcode">_blank</i> deutet hierbei darauf hin, dass das Dokument
                                         in einem neuen Browser-Tab geöffnet werden soll. Soll das Dokument in demselben Fenster geöffnet in dem der Link angeklickt wurde, wird der Wert <i class="ilcode">_self</i> benutzt. Weiter mögliche Werte sind
-                                        <i
-                                            class="ilcode"></i> und <i class="ilcode">_parent</i>. Diese öffnen das Dokument in dem obersten bzw. in dem Elternframe des aktuellen Elements. <br> <br> Nachfolgend finden Sie ein Beispiel von einem Quellcode der mittels
-                                            <i
-                                                class="ilcode">anchor</i>-Element und <i class="ilcode">href</i>-Attribut ein anderes HTML-Dokument (main.html) referenziert. Da es sich bei dem Inhalt um eine <i class="ilcode">figure</i> mit <i class="ilcode">img</i> und
-                                                <i class="ilcode">figcaption</i> handelt, und als target <i class="ilcode">„_blank“</i> angegeben wurde, wird diese Referenz in Form eines Bildes mit einem dazugehörigen Link dargestellt. Durch einen Klick
-                                                wird das referenzierte Dokument in einem neuen Browserfenster geöffnet. <br> <br>
-                                                <figure>
-                                                    <img src="./v02a-data/abb_2.7.png" alt="Bild konnte nicht geladen werden" width="85%" style="border:2px solid black">
-                                                    <figcaption>Abbildung 2.7 - Referenzierung des Dokuments „main.html“, durch ein anchor um das eingebundene Bild [Re19]
-                                                    </figcaption>
-                                                </figure>
+                                        <i class="ilcode"></i> und <i class="ilcode">_parent</i>. Diese öffnen das Dokument in dem obersten bzw. in dem Elternframe des aktuellen Elements. <br> <br> Nachfolgend finden Sie ein Beispiel von einem Quellcode
+                                        der mittels
+                                        <i class="ilcode">anchor</i>-Element und <i class="ilcode">href</i>-Attribut ein anderes HTML-Dokument (main.html) referenziert. Da es sich bei dem Inhalt um eine <i class="ilcode">figure</i> mit <i class="ilcode">img</i>                                        und
+                                        <i class="ilcode">figcaption</i> handelt, und als target <i class="ilcode">„_blank“</i> angegeben wurde, wird diese Referenz in Form eines Bildes mit einem dazugehörigen Link dargestellt. Durch einen Klick wird
+                                        das referenzierte Dokument in einem neuen Browserfenster geöffnet. <br> <br>
+                                        <figure>
+                                            <img src="./v02a-data/abb_2.7.png" alt="Bild konnte nicht geladen werden" width="85%" style="border:2px solid black">
+                                            <figcaption>Abbildung 2.7 - Referenzierung des Dokuments „main.html“, durch ein anchor um das eingebundene Bild [Re19]
+                                            </figcaption>
+                                        </figure>
                                     </p>
 
                                     <h4>Das download-Attribut</h4>
@@ -743,7 +744,8 @@
                             <br> <br> Hauptsächlich wird in diesem Fall JavaScript verwendet. Aber das DOM wurde so entworfen, dass die Realisierung auch durch andere Sprachen wie z.B. Python, C++ oder PHP möglich ist. (vgl. [W3C04]) <br> <br> Wird ein
                             HTML-Dokument durch einen Browser geladen, so erstellt er ein solches Modell auf Basis dieses Dokuments und speichert das Modell in dem Arbeitsspeicher des Nutzers. (vgl. [Se19]) <br> <br> Auf dieser Grundlage kann z.B. ein
                             Skript in JavaScript erstellt werden, welcher in die HTML-Datei eingebunden wird. Innerhalb dieses Skripts kann dann durch die bereitgestellten Methoden der Schnittstelle, auf jedes HTML-Elemente sowie deren Attribute zugegriffen
-                            werden.<br> <br> Diese können dann durch die Skript-/Programmiersprache beliebig verändert, hinzugefügt oder gelöscht werden. <br> <br> Dadurch wird ermöglicht dynamische Funktionen auf der Website bereitzustellen, welche beispielsweise
+                            werden.
+                            <br> <br> Diese können dann durch die Skript-/Programmiersprache beliebig verändert, hinzugefügt oder gelöscht werden. <br> <br> Dadurch wird ermöglicht dynamische Funktionen auf der Website bereitzustellen, welche beispielsweise
                             die visuelle Darstellung einiger Elemente verändern oder ein Ergebnis einer Berechnung liefern. <br> <br> Im Fall von JavaScript stellt das DOM-API einige Methoden bereit, um gezielt auf Elemente bestimmter Klassen oder id’s
                             zugreifen zu können. Dadurch sollte an dieser Stelle nochmal die Bedeutung dieser Attribute verdeutlicht werden. <br> <br>
                         </p>
@@ -840,14 +842,14 @@
                                 Durch ein <i class="code">video</i>-Element können nun auch Video-Dateien in eine Website eingebunden wurden. Dabei werden die Formate MP4, WebM und Ogg unterstützt. (vgl. [W3S19, Video] ) <br> <br> Genau wie bei dem audio-Element
                                 wird durch das video-Element ein Container für
                                 <i class="code">source</i>-Elemente definiert. Auch die Referenzierung der Datei erfolgt nach demselben Prinzip, jedoch muss bei dem <i class="code">type</i>-Attribut auch ein entsprechendes Videoformat angegeben werden.
-                                (<i class="code">video/mp4, video/webm, video/ogg</i>). <br> <br> Wie auch bei dem audio-Element stellt das Attribut <i class="code">controls</i> einen Videoplayer zur Verfügung. Dessen Größe kann über die Attribute
-                                <i
-                                    class="code">width</i> und <i class="code">height</i> angepasst werden. <br>
-                                    <br> Hier ein Beispiel dazu:<br>
-                                    <figure>
-                                        <img src="./v02a-data/abb_5.3.PNG" alt="Bild konnte nicht geladen werden" width="85%" style="border:2px solid black">
-                                        <figcaption>Abbildung 5.3 - Ein durch ein video-Element erzeugter Videoplayer, für die Datei „video.mp4“</figcaption>
-                                    </figure> <br>
+                                (
+                                <i class="code">video/mp4, video/webm, video/ogg</i>). <br> <br> Wie auch bei dem audio-Element stellt das Attribut <i class="code">controls</i> einen Videoplayer zur Verfügung. Dessen Größe kann über die Attribute
+                                <i class="code">width</i> und <i class="code">height</i> angepasst werden. <br>
+                                <br> Hier ein Beispiel dazu:<br>
+                                <figure>
+                                    <img src="./v02a-data/abb_5.3.PNG" alt="Bild konnte nicht geladen werden" width="85%" style="border:2px solid black">
+                                    <figcaption>Abbildung 5.3 - Ein durch ein video-Element erzeugter Videoplayer, für die Datei „video.mp4“</figcaption>
+                                </figure> <br>
                             </p>
                         </div>
                     </div>
