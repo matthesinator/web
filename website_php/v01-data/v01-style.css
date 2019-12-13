@@ -1,0 +1,28 @@
+#abb1-1-1 {
+	float: right;
+}
+
+#abb1-3-1b {
+	float: right;
+}
+
+#abb3-1-2 {
+	float: right;
+}
+
+#abb3-3-3a {
+	float: right;
+}
+
+.definition {
+	padding: 2px;
+	border: 2px solid rgb(214, 4, 4);
+	background-color: rgb(247, 196, 130);
+	position: relative;
+}
+
+.textbox {
+	padding: 2px;
+	border: 2px solid black;
+	position: relative;
+}

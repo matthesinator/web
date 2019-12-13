@@ -1,0 +1,40 @@
+.start-logo {
+    float: left;
+    max-width: 100%;
+    height: auto;
+    margin-right: 1%;
+}
+
+.thema {
+    font-size: 1.2em;
+}
+
+.thema::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.thema-h3 {
+    text-align: center;
+}
+
+#html-logo {
+    margin-right: 2%;
+    margin-left: 3%;
+}
+
+#css-logo {
+    margin-right: 3%;
+    margin-left: 4%;
+}
+
+#js-logo {
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+#jsp-logo {
+    margin-right: 4%;
+    margin-left: 5%;
+}

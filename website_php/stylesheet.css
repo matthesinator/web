@@ -1,0 +1,429 @@
+/*  HSMA-Farben: normal blau: #22376f
+*                hover blau: #384b7d
+                active blau: #4e5f8c
+*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+.page {
+    position: relative;
+    min-height: 100vh;
+}
+
+.header div .schriftzug {
+    position: absolute;
+    top: 1em;
+    left: 8em;
+}
+
+.header div p {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    right: 2%;
+    top: 10px;
+}
+
+.navigation {
+    list-style-type: none;
+    background-color: #22376f;
+}
+
+.navigation li {
+    float: left;
+}
+
+.navigation li a {
+    display: inline-block;
+    background-color: #22376f;
+    text-align: center;
+    width: 10em;
+    vertical-align: middle;
+    text-decoration: none;
+    color: white;
+    border: 1px solid whitesmoke;
+}
+
+.navigation li a:hover {
+    color: white !important;
+    background-color: #384b7d !important;
+}
+
+.navigation::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#activetab {
+    color: white;
+    background-color: #4e5f8c;
+}
+
+.content-container {
+    display: flex;
+    position: relative;
+    padding: 5px;
+    padding-bottom: 3em;
+}
+
+.center-paragraph {
+    flex: 0 0 100%;
+}
+
+.center-paragraph h4 {
+    margin-bottom: 10px;
+}
+
+.content-left {
+    width: 25%;
+}
+
+.content-center {
+    width: 50%;
+}
+
+.content-right {
+    width: 25%;
+}
+
+.content-center h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+.content-center p {
+    margin-top: 2px;
+}
+
+.content-center .beschreibung {
+    font-size: 1.2em;
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+
+
+/*clearfix*/
+
+.content-center .beschreibung::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.content-center .beschreibung #chapter-logo {
+    float: left;
+    margin-right: 1%;
+}
+
+.content-center .author {
+    font-size: 0.8em;
+    text-align: right;
+}
+
+#skriptlink {
+    width: 100%;
+    text-decoration: none;
+    font-size: 2em;
+    text-align: center;
+    color: black;
+    background-color: white;
+    display: block;
+}
+
+#skriptlink:hover {
+    color: grey;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5em;
+    /*Zeilenhöhe*2.5*/
+    background-color: #22376f;
+}
+
+.footer div {
+    position: relative;
+    text-align: center;
+}
+
+.footer div nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hidden {
+    /*visibility: hidden;  Im Unterschied zu display: none; bleibt hier der reserviert Platz bestehen. */
+    display: none;
+}
+
+.pfeil-d {
+    border: solid #22376f;
+    border-width: 0 .2em .2em 0;
+    display: inline-block;
+    padding: .20em;
+    margin-right: 8px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.pfeil-r {
+    border: solid #22376f;
+    border-width: 0 .2em .2em 0;
+    display: inline-block;
+    padding: .20em;
+    margin-right: 8px;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+
+.center-paragraph h4,
+h2 {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 920px) {
+    .contentnav {
+        width: 100%;
+        text-align: left;
+        position: sticky;
+        top: 1em;
+    }
+    .contentnav ul {
+        font-size: 1.2vw;
+        padding-right: 20%;
+        list-style-type: none;
+    }
+    .contentnav ul li {
+        border: 1px dotted black;
+        margin: 5px 0 5px 0;
+        padding-left: 5px;
+    }
+    .contentnav ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+    .contentnav ul li a:hover {
+        color: grey;
+    }
+}
+
+@media screen and (min-width: 701px) {
+    .header {
+        background-color: #22376f;
+        padding: 2em;
+    }
+    .navigation li a {
+        height: 5ex;
+        line-height: 5ex;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1360px) {
+    .navigation {
+        margin: 1em 0 1em 0;
+        padding: 0;
+    }
+    .navigation li {
+        width: 50%;
+    }
+    .navigation li a {
+        width: 100%;
+        height: 3ex;
+        line-height: 3ex;
+    }
+}
+
+@media screen and (min-width: 920px) and (max-width: 1299px) {
+    .content-right {
+        display: none;
+    }
+    .content-center {
+        width: 75%;
+    }
+    .content-left {
+        width: 25%;
+        ;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 920px) {
+    .content-left {
+        display: none;
+    }
+    .content-right {
+        display: none;
+    }
+    .content-center {
+        width: 100%;
+    }
+    .header {
+        background-color: #22376f;
+        padding: 2em;
+    }
+    .footer div {
+        position: relative;
+        width: 50%;
+        left: 25%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #logo {
+        display: none;
+    }
+    .header {
+        height: 2ex;
+    }
+    .header div .schriftzug {
+        right: 2%;
+        left: auto;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+    .content-left {
+        display: none;
+    }
+    .content-right {
+        display: none;
+    }
+    .content-center {
+        display: flex;
+        flex: 0 0 100%;
+        flex-wrap: wrap;
+    }
+    .header {
+        display: none;
+    }
+    .navigation {
+        margin: 0;
+        padding: 0;
+    }
+    .navigation li {
+        width: 100%;
+    }
+    .navigation li a {
+        width: 100%;
+        height: 3ex;
+        line-height: 3ex;
+    }
+}
+
+.code {
+    font-family: "monospace";
+    letter-spacing: -1px;
+}
+
+.einfuehrung {
+    padding: 2px;
+    border: 2px solid green;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+.uebung {
+    width: 50%;
+    position: relative;
+    left: 25%;
+    border: 2px solid blue;
+    padding: 2px;
+    min-height: 2.5em;
+    line-height: 1.5em;
+}
+
+.uebung::first-line {
+    font-weight: bold;
+}
+
+.warnung {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    border: 2px solid red;
+    padding: 2px;
+    min-height: 2.5em;
+    line-height: 1.5em;
+}
+
+.warnung::first-line {
+    font-weight: bold;
+}
+
+figcaption {
+    font-size: 0.8em;
+}
+
+caption {
+    font-size: 0.8em;
+}
+
+thead {
+    color: white;
+    background-color: black;
+}
+
+table {
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+table,
+table tr,
+table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-left: 1ex;
+    padding-right: 1ex;
+    padding-top: 0.5ex;
+    padding-bottom: 0.5ex;
+}
+
+.formular form {
+    padding-top: 2ex;
+    padding-left: 3ex;
+    position: relative;
+    left: 25%;
+    width: 50%;
+}
+
+.formular textarea {
+    box-sizing: border-box;
+    padding: 5px;
+    outline: none;
+}
+
+.formular h2 {
+    font-size: 24px;
+}
+
+.formbtn1{
+    padding: 5px;
+    margin: 4px;
+}
+
+.formbtn2{
+    padding: 5px;
+    margin: 4px;
+}
+
+.formfeld {
+    padding: 5px;
+    margin: 3px;
+    border: 1px solid #22376f;
+}
