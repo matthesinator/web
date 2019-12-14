@@ -2,6 +2,7 @@
 $topic = 'jsp';
 include('includes/header.php');
 ?>
+<div class="content-container">
     <div class="content-left"></div>
     <div class="content-center">
         <h1>JSPs, Servlets, JaxB</h1>
@@ -18,6 +19,12 @@ include('includes/header.php');
         </p>
         <br><br>
 
-<?php
-include('includes/footer.php');
-?>
+        </div>
+  <div class="content-right"></div>
+</div>
+<?php include('includes/footer.php'); ?>
+</div>
+<script src="scripts.js"></script>
+</body>
+
+</html>

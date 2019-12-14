@@ -2,6 +2,7 @@
 $topic = 'html';
 include('includes/header.php');
 ?>
+<div class="content-container">
     <div class="content-left">
         <nav class="contentnav">
             <ul>
@@ -1005,9 +1006,12 @@ include('includes/header.php');
             </div>
         </div>
     </div>
+    </div>
+  <div class="content-right"></div>
+</div>
+<?php include('includes/footer.php'); ?>
+</div>
+<script src="scripts.js"></script>
+</body>
 
-
-
-<?php
-include('includes/footer.php');
-?>
+</html>

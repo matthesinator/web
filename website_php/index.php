@@ -2,6 +2,7 @@
 $topic = 'main';
 include('includes/header.php');
 ?>
+<div class="content-container">
     <div class="content-left"></div>
     <div class="content-center">
         <h1>Themenübersicht</h1>
@@ -91,7 +92,12 @@ include('includes/header.php');
                     Mehr dazu im Skript.</p>
             </div>
         </div>
+        </div>
+  <div class="content-right"></div>
+</div>
+<?php include('includes/footer.php'); ?>
+</div>
+<script src="scripts.js"></script>
+</body>
 
-<?php
-include('includes/footer.php');
-?>
+</html>

@@ -1,0 +1,39 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.leseprobe {
+    display: flex;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+}
+
+.definition {
+    width: 50%;
+    position: relative;
+    border: 2px solid darkgray;
+    background: lightgray;
+    padding: 2px;
+    min-height: 2.5em;
+    line-height: 1.5em;
+}
+
+.definition::first-line {
+    font-weight: bold;
+}
+
+.syntax {
+    font-size: small;
+    width: 80%;
+    padding: 2px;
+    min-height: 2em;
+    line-height: 1.5em;
+    position: relative;
+    border: 2px solid lightgray;
+}
+
+.syntax i {
+    color: royalblue;
+}

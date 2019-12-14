@@ -1,7 +1,7 @@
 <?php
     include('includes/header.php');
 ?>  
-
+<div class="content-container">
 <?php
     $name = $_POST["name"];
     $email = $_POST["email"];
@@ -20,7 +20,11 @@
     echo "Danke ".$name.", wir melden uns bald!\r\n";
     echo "</p>";
 ?>
+  </div>
+  <div class="content-right"></div>
+</div>
+<?php include('includes/footer.php'); ?>
+</div>
+</body>
 
-<?php
-    include('includes/footer.php');
-?>
+</html>

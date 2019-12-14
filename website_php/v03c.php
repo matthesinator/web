@@ -2,6 +2,7 @@
 $topic = 'node';
 include('includes/header.php');
 ?>
+<div class="content-container">
     <div class="content-left"></div>
     <div class="content-center">
         <h1>NodeJS</h1>
@@ -17,8 +18,12 @@ include('includes/header.php');
             Autor: Prof. Dr. Frank Dopatka
         </p>
         <br><br>
+        </div>
+  <div class="content-right"></div>
+</div>
+<?php include('includes/footer.php'); ?>
+</div>
+<script src="scripts.js"></script>
+</body>
 
-
-<?php
-include('includes/footer.php');
-?>
+</html>

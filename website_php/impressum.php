@@ -1,9 +1,13 @@
 <?php
+$topic = 'imp';
     include('includes/header.php');
 ?>
 
-
-<p>
+<div class="content-container">
+        <div class="content-left"></div>
+          <div class="content-center">
+            <div class="center-paragraph">
+            <p>
                 <h1>Impressum</h1>
             </p>
             <br />
@@ -28,9 +32,10 @@
             <p>Quelle:<br>
                 <a href="https://www.e-recht24.de">e-recht24.de</a></p>
         </div>
+        </div>
+  <div class="content-right"></div>
+</div>
+<?php include('includes/footer.php'); ?>
+</body>
 
-
-
-<?php
-    include('includes/footer.php');
-?>
+</html>

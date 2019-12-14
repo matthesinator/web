@@ -1,7 +1,3 @@
-            </div>
-            <div class="content-right">
-            </div>
-        </div>
         <div class="footer">
             <div>
                 <nav>
@@ -12,8 +8,3 @@
                 </nav>
             </div>
         </div>
-    </div>
-    <script src="scripts.js"></script>
-</body>
-
-</html>
