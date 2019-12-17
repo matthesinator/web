@@ -24,7 +24,8 @@
                     <li>Verwendete IP-Adresse</li>
                 </ul>
                 Diese Daten werden auf keine Art und Weise weitergegeben oder sonstwie weiterverwendet, sondern dienen nur der Protokollierung von Seitenaufrufen. Im Falle eines Angriffes auf den Server können diese Daten für die Analyse und Abwehr des Angriffes genutzt
-                werden.
+                werden.<br><br>
+                Bei Verwendung des Kontaktformulars werden die eingegebenen persänlichen Daten auf unserem Server gespeichert.
                 <h2>Ihre Betroffenenrechte:</h2>
                 <p>Unter den angegebenen Kontaktdaten unseres Datenschutzverantwortlichen können Sie jederzeit folgende Rechte ausüben:
                 </p>
