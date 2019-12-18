@@ -1,4 +1,5 @@
 <?php
+    $topic = 'fv';
     include('includes/header.php');
 ?>  
 <div class="content-container">
@@ -9,8 +10,13 @@
     $nachricht = $_POST["nachricht"];
 
     $logName = 'kontaktlog.csv';
-    $aktuellerLog = file_get_contents($logName);
-    $kontaktDaten = "\nname:".$name." , email:".$email." , betreff:".$betreff." , nachricht:".$nachricht;
+    if(file_exists('kontaktlog.csv')){
+     $aktuellerLog = file_get_contents($logName);
+    }
+    else {
+      $aktuellerLog = '';
+    }
+    $kontaktDaten = "\nname:".$name.";email:".$email.";betreff:".$betreff.";nachricht:".$nachricht;
 
     $aktuellerLog .= $kontaktDaten;
 
