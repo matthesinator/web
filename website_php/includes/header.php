@@ -31,6 +31,7 @@
                 <li><a <?php if($topic == 'cs') { echo 'id="activetab"';} ?>href="v01-client-server.php">Server & Client</a></li>
                 <li><a <?php if($topic == 'html') { echo 'id="activetab"';} ?>href="v02a-html.php">HTML</a></li>
                 <li><a <?php if($topic == 'css') { echo 'id="activetab"';} ?>href="v02b-css.php">CSS</a></li>
+                <li><a <?php if($topic == 'css-gh') { echo 'id="activetab"';} ?>href="v02b-gh-css.php">CSS 2</a></li>
                 <li><a <?php if($topic == 'js') { echo 'id="activetab"';} ?>href="v02c-javascript.php">JavaScript</a></li>
                 <li><a <?php if($topic == 'js-mb') { echo 'id="activetab"';} ?>href="v02c-javascript-mb.php">JavaScript 2</a></li>
                 <li><a <?php if($topic == 'jsp') { echo 'id="activetab"';} ?>href="v03a.php">JSP's/Servlets/JaxB </a></li>
